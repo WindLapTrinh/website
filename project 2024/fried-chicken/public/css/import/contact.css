@@ -1,0 +1,26 @@
+.page-title-area {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 190px 0 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("http://localhost/project-2024/wind-e-commerce/website/public/images/1729912515-banner-1.jpg");
+}
+.title-contact{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+}
+.btn-seend-meesgae{
+    border-radius: 8px;
+    color: #000000;
+    background-color: #ebebeb;
+}
+.btn-seend-meesgae:hover{
+    background-color: #ff9696;
+    color: #ebebeb;
+    transition: 0.5s;
+}

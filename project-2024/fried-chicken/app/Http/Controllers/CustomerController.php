@@ -76,6 +76,6 @@ class CustomerController extends Controller
     }
 
     public function booking(){
-        
+        return view('template.booking');
     }
 }

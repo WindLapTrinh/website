@@ -59,7 +59,7 @@
                                     <a href={{url('/trang-chu/bai-viet/chi-tiet/cau-chuyen-nhung-nam-thang-cua-tuoi-tre-16.html')}} title="">Giới thiệu</a>
                                 </li>
                                 <li>
-                                    <a href={{route('customer.contact')}} title="">Đặt bàn</a>
+                                    <a href={{route('customer.booking')}} title="">Đặt bàn</a>
                                 </li>
                             </ul>
                         </div>

@@ -7,7 +7,7 @@
                 <div class="section-detail">
                     <ul class="list-item clearfix">
                         <li><a href="?page=home" title="">Trang chủ</a></li>
-                        <li><a href="" title="">Thanh toán</a></li>
+                        <li><a href="" title="">Đặt bàn</a></li>
                     </ul>
                 </div>
             </div>
@@ -17,35 +17,29 @@
                 @csrf
                 <div class="section" id="customer-info-wp">
                     <div class="section-head">
-                        <h1 class="section-title">Thông tin khách hàng</h1>
+                        <h1 class="section-title">Thông tin người đặt</h1>
                     </div>
                     <div class="section-detail">
                         <!-- Thông tin khách hàng -->
                         <div class="row">
                             <div class="col-12">
-                                <label for="fullname">Họ tên</label>
-                                <input type="text" class="form-control" name="fullname" id="fullname" required>
+                                <label for="fullname">Tên liên hệ</label>
+                                <input type="text" class="form-control" name="fullname" placeholder="nhập tên liên hệ..." id="fullname" required>
                             </div>
-                            <div class="col-12">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" name="email" id="email" required>
-                            </div>
+                            
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <label for="address">Địa chỉ</label>
-                                <input type="text" class="form-control" name="address" id="address" required>
-                            </div>
-                            <div class="col-12">
+                            <div class="col-12 col-md-6">
                                 <label for="phone_number">Số điện thoại</label>
-                                <input type="tel" class="form-control" name="phone_number" id="phone_number" required>
+                                <input type="tel" class="form-control" name="phone_number" id="phone_number" placeholder="nhập số điện thoại..." required>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <p class="text-danger"><b>Lưu ý:</b> chỉ áp dụng giao hàng trong khu vực Khánh Hòa và dưới 6km.</p>
+                            <div class="col-12 col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="nhập emai..." required>
                             </div>
+                           
                         </div>
+                        
                     </div>
                 </div>
 
@@ -66,29 +60,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($cart as $item)
-                                    <tr class="cart-item row p-0 m-0">
-                                        <td class="col-3">
-                                            <img class="product-image" src="{{ asset($item['image']) }}" alt="">
-                                        </td>
-                                        <td class="product-name col-5">
-                                            <span> {{ $item['name'] }}</span>
-                                        </td>
-                                        <td class="col-2">
-                                            <strong class="product-quantity">x {{ $item['quantity'] }}</strong>
-                                        </td>
-                                        <td class="product-total col-2">
-                                            {{ number_format($item['price'] * $item['quantity'], 0, ',', '.') }} đ</td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
+                               
                             <tfoot>
-                                <tr class="order-total row p-0 m-0 pt-2 text-right">
+                                {{-- <tr class="order-total row p-0 m-0 pt-2 text-right">
                                     <td class="col-9"><span>Tổng đơn hàng:</span></td>
                                     <td class="col-3"><strong
                                             class="total-price">{{ number_format($totalPrice, 0, ',', '.') }} đ</strong>
                                     </td>
-                                </tr>
+                                </tr> --}}
                             </tfoot>
                         </table>
 

@@ -171,7 +171,7 @@ Route::get("trang-chu/bai-viet/chi-tiet/{post:slug}", [PostController::class, "d
 
 //page contact
 Route::get("trang-chu/lien-he", [CustomerController::class, "contact"])->name("customer.contact");
-Route::post("trang-chu/tu-van", [CustomerController::class, "advise"])->name("customer.booking");
+Route::get("trang-chu/dat-ban", [CustomerController::class, "booking"])->name("customer.booking");
 
 
 

@@ -15,77 +15,79 @@
         <div id="wrapper" class="wp-inner clearfix">
             <form method="POST" action="{{ route('order.store') }}" name="form-checkout">
                 @csrf
-                <div class="section" id="customer-info-wp">
+                <div class="section infomation-book-customer" id="customer-info-wp">
                     <div class="section-head">
                         <h1 class="section-title">Thông tin người đặt</h1>
                     </div>
                     <div class="section-detail">
                         <!-- Thông tin khách hàng -->
-                        <div class="row">
+                        <div class="row mt-2">
                             <div class="col-12">
-                                <label for="fullname">Tên liên hệ</label>
+                                <label for="fullname" class="mb-2">Tên liên hệ</label>
                                 <input type="text" class="form-control" name="fullname" placeholder="nhập tên liên hệ..." id="fullname" required>
                             </div>
                             
                         </div>
-                        <div class="row">
+                        <div class="row mt-2">
                             <div class="col-12 col-md-6">
-                                <label for="phone_number">Số điện thoại</label>
+                                <label for="phone_number" class="mb-2">Số điện thoại</label>
                                 <input type="tel" class="form-control" name="phone_number" id="phone_number" placeholder="nhập số điện thoại..." required>
                             </div>
                             <div class="col-12 col-md-6">
-                                <label for="email">Email</label>
+                                <label for="email" class="mb-2">Email</label>
                                 <input type="email" class="form-control" name="email" id="email" placeholder="nhập emai..." required>
                             </div>
-                           
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <label for="note" class="mb-2">Ghi chú</label>
+                                <textarea class="form-control" name="note" rows="5"></textarea>
+                            </div>
                         </div>
                         
                     </div>
                 </div>
 
                 <!-- Thông tin đơn hàng -->
-                <div class="section" id="order-review-wp">
+                <div class="section mt-2" id="order-review-wp">
                     <div class="section-head">
-                        <h1 class="section-title">Thông tin đơn hàng</h1>
+                        <h1 class="section-title">Thông tin đặt chỗ</h1>
                     </div>
                     <div class="section-detail">
-                        <!-- Cart Items -->
-                        <table class="table-striped">
-                            <thead>
-                                <tr class="row p-0 m-0">
-                                    <th class="col-3">Ảnh</th>
-                                    <th class="col-5">Sản phẩm</th>
-                                    <th class="col-2">Số lượng</th>
-                                    <th class="col-2">Tổng</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                               
-                            <tfoot>
-                                {{-- <tr class="order-total row p-0 m-0 pt-2 text-right">
-                                    <td class="col-9"><span>Tổng đơn hàng:</span></td>
-                                    <td class="col-3"><strong
-                                            class="total-price">{{ number_format($totalPrice, 0, ',', '.') }} đ</strong>
-                                    </td>
-                                </tr> --}}
-                            </tfoot>
-                        </table>
+                         
+                         <div class="row mt-2">
+                            <div class="col-12 col-md-6">
+                                <label for="fullname" class="mb-2">Người lớn</label>
+                                <select class="form-control text-center" aria-label="Default select example">
+                                    <option selected>1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                  </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="fullname" class="mb-2">Trẻ em</label>
+                                <select class="form-control text-center" aria-label="Default select example">
+                                    <option selected>1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                  </select>
+                            </div>
+                            
+                        </div>
+                        <div class="row mt-2">
+                            <label for="phone_number" class="mb-2 col-12">Thời gian đến</label>
+                            <div class="col-12 col-md-6">
+                                <input type="tel" class="form-control" name="phone_number" id="phone_number" placeholder="nhập số điện thoại..." required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="nhập emai..." required>
+                            </div>
+                        </div>
 
                         <!-- Phương thức thanh toán -->
                         <div id="payment-checkout-wp" class="row p-0 m-0">
-                            <div class="col-6 p-0 m-0">
-                                <ul id="payment_methods">
-                                    <li>
-                                        <input type="radio" id="direct-payment" name="payment_method" value="COD" required>
-                                        <label for="direct-payment">Thanh toán tại cửa hàng</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="payment-home" name="payment_method" value="Online Payment">
-                                        <label for="payment-home">Thanh toán tại nhà</label>
-                                    </li>
-                                </ul>
-                            </div>
-
                             <!-- Đặt hàng -->
                             <div class="place-order-wp clearfix col-6">
                                 <button type="submit" id="order-now" class="btn-order-store">

@@ -20,10 +20,11 @@ return new class extends Migration
             $table->timestamp('order_date');
             $table->enum('payment_method', ['COD', 'Online Payment']);
             $table->text('shipping_address');
-            $table->enum('status', ['pending','processing','shipped','delivered','canceled'])->default('pending');
+            $table->enum('status', ['processing', 'delivered', 'canceled'])->default('processing');
             $table->unsignedBigInteger('customer_id');
             $table->foreign('customer_id')->references('id')->on('customers');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

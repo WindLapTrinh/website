@@ -168,3 +168,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+$('.datepicker').datepicker({
+    format: 'dd/mm/yyyy', // Định dạng ngày
+    autoclose: true, // Tự động đóng khi chọn
+    todayHighlight: true, // Đánh dấu ngày hiện tại
+    startDate: '0d' // Chỉ cho phép chọn ngày từ hôm nay trở đi
+});

@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('slug');
             $table->string('desc')->nullable();
             $table->integer('parent_id')->default(0);
-            $table->foreign('user_id')->constrained('users')->onDelete('cascade');
-            $table->timestamps();
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');            $table->timestamps();
         });
     }
 

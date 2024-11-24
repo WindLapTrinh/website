@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
     <link href={{ asset('css/bootstrap/bootstrap-theme.min.css') }} rel="stylesheet" type="text/css" />
     <link href={{ asset('css/bootstrap/bootstrap.min.css') }} rel="stylesheet" type="text/css" />
@@ -15,7 +18,7 @@
     <link href={{ asset('css/carousel/owl.theme.css') }} rel="stylesheet" type="text/css" />
 
     <link href={{ asset('css/font-awesome/css/font-awesome.css') }} rel="stylesheet" type="text/css" />
-                <link href={{ asset('css/font-awesome/css/font-awesome.min.css') }} rel="stylesheet" type="text/css" />
+    <link href={{ asset('css/font-awesome/css/font-awesome.min.css') }} rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{ asset('css/import/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/import/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/import/footer.css') }}">
@@ -47,19 +50,20 @@
                         <div id="main-menu-wp" class="fl-right">
                             <ul id="main-menu" class="clearfix">
                                 <li>
-                                    <a href={{url('/')}} title="">Trang chủ</a>
+                                    <a href={{ url('/') }} title="">Trang chủ</a>
                                 </li>
                                 <li>
-                                    <a href={{route('product.all')}} title="">Sản phẩm</a>
+                                    <a href={{ route('product.all') }} title="">Sản phẩm</a>
                                 </li>
                                 <li>
-                                    <a href={{route('post.all')}} title="">Blog</a>
+                                    <a href={{ route('post.all') }} title="">Blog</a>
                                 </li>
                                 <li>
-                                    <a href={{url('/trang-chu/bai-viet/chi-tiet/cau-chuyen-nhung-nam-thang-cua-tuoi-tre-16.html')}} title="">Giới thiệu</a>
+                                    <a href={{ url('/trang-chu/bai-viet/chi-tiet/cau-chuyen-nhung-nam-thang-cua-tuoi-tre-16.html') }}
+                                        title="">Giới thiệu</a>
                                 </li>
                                 <li>
-                                    <a href={{route('customer.booking')}} title="">Đặt bàn</a>
+                                    <a href={{ route('customer.booking') }} title="">Đặt bàn</a>
                                 </li>
                             </ul>
                         </div>
@@ -67,7 +71,7 @@
                 </div>
                 <div id="head-body" class="clearfix">
                     <div class="wp-inner">
-                        <a href={{url('/')}} title="" id="logo" class="fl-left infomation-admin">
+                        <a href={{ url('/') }} title="" id="logo" class="fl-left infomation-admin">
                             <img class="image-logo" src={{ asset('images/logo/wind-app.png') }} />
                             <p>Wind Lập Trình</p>
                         </a>

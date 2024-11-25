@@ -3,7 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 #head-top {
-    background: #000000;
+    background: #fbea1ddb;
 }
 #head-top #main-menu li {
     float: left;
@@ -11,7 +11,7 @@ body {
 #head-top #payment-link {
     position: relative;
     display: block;
-    color: #fff;
+    color: #000000;
     padding: 10px 0px 10px 20px;
 }
 #head-top #payment-link:before {
@@ -23,14 +23,14 @@ body {
 }
 #head-top #main-menu li a {
     display: block;
-    color: #fff;
+    color: #000000;
     padding: 10px 15px;
 }
 #head-top #main-menu li:last-child a {
     padding-right: 0 !important;
 }
 #head-body {
-    background: #000000;
+    background: #fbea1ddb;
 }
 #head-body #logo {
     text-transform: uppercase;
@@ -54,7 +54,7 @@ body {
     display: inline-block;
     border: none;
     outline: none;
-    background: #a3a3a3;
+    background: #000000;
     color: #fff;
     font-weight: bold;
     padding: 10px 20px;
@@ -76,11 +76,11 @@ body {
     top: 50%;
     left: 0px;
     font-size: 21px;
-    color: #fff;
+    color: #000000;
     width: 38px;
     height: 38px;
     line-height: 35px;
-    border: 2px solid #fff;
+    border: 2px solid #000000;
     border-radius: 50%;
     text-align: center;
     transform: translateY(-50%);
@@ -90,7 +90,7 @@ body {
     content: "";
     width: 1px;
     height: 50%;
-    background: #ffffff;
+    background: #000000;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -98,7 +98,7 @@ body {
 #advisory-wp span {
     position: relative;
     display: block;
-    color: #fff;
+    color: #000000;
 }
 #advisory-wp .title {
     font-size: 15px;
@@ -111,7 +111,7 @@ body {
 #cart-respon-wp {
     position: relative;
     display: block;
-    color: #fff;
+    color: #000000;
     padding: 20px 0px 20px 30px;
 }
 #cart-wp i,
@@ -121,7 +121,7 @@ body {
     height: 37px;
     line-height: 33px;
     text-align: center;
-    border: 2px solid #fff;
+    border: 2px solid #000000;
     border-radius: 50%;
 }
 #cart-wp #num,

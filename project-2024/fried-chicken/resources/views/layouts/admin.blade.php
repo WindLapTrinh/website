@@ -272,7 +272,7 @@
                             <div class="nav-link-icon d-inline-flex">
                                 <i class="fas fa-briefcase icon-parent-menu"></i>
                             </div>
-                            Sản phẩm
+                             Sản phẩm
                         </a>
                         <i class="arrow fas fa-angle-right"></i>
                         <ul class="sub-menu">

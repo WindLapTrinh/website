@@ -73,7 +73,6 @@
                     <div class="wp-inner">
                         <a href={{ url('/') }} title="" id="logo" class="fl-left infomation-admin">
                             <img class="image-logo" src={{ asset('images/logo/wind-app.png') }} />
-                            <p>Wind Lập Trình</p>
                         </a>
                         <div id="search-wp" class="fl-left">
                             <form method="POST" action="">

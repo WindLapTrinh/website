@@ -60,7 +60,7 @@
                                     <td scope="row">{{ $t++ }}</td>
                                     <td><a class="name-role"
                                             href="{{ route('role.edit', $role->id) }}">{{ $role->name }}</a></td>
-                                    <td>{{ $role->description }}</td>
+                                    <td>{!! $role->description !!}</td>
                                     <td>{{ $role->created_at->format('d/m/Y') }}</td>
                                     <td>
                                         <a href="{{ route('role.edit', $role->id) }}"

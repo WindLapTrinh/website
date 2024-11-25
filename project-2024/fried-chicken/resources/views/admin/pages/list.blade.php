@@ -150,6 +150,7 @@
         </div>
     </div>
 
+    @if (count($pages) > 0)
     <div class="modal fade" id="editPageModal" tabindex="-1" aria-labelledby="editPageModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -194,5 +195,6 @@
             </div>
         </div>
     </div>
+    @endif
     
 @endsection

@@ -64,7 +64,7 @@
                             @endforeach
                         @else
                             <tr>
-                                <td colspan="8">Hiện tại chưa có thông tin bài viết nào !</td>
+                                <td colspan="8">Hiện tại chưa có thông tin khách hàng nào !</td>
                             </tr>
                         @endif
                     </tbody>

@@ -94,7 +94,7 @@
                                 @endforeach
                             @else
                                 <tr>
-                                    <td colspan="7">Không có nhân sự nào</td>
+                                    <td colspan="7">Không có thông tin nhân sự nào hiển thị !</td>
                                 </tr>
                             @endif
                         </tbody>

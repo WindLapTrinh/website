@@ -74,6 +74,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @if (count($permissions) > 0)
                             @php $i = 0; @endphp
                             @foreach ($permissions as $moduleName => $modulePermissions)
                                 <tr>
@@ -98,6 +99,11 @@
                                     </tr>
                                 @endforeach
                             @endforeach
+                            @else
+                                <tr>
+                                    <td colspan="4">Hiện tại không có quyền nào ?</td>
+                                </tr>
+                            @endif
                         </tbody>
                     </table>
                 </div>

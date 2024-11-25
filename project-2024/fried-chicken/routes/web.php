@@ -31,6 +31,7 @@ use UniSharp\LaravelFilemanager\Facades\Lfm;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Auth::routes();
 
 Route::group(['prefix' => 'laravel-filemanager'], function () {
@@ -48,21 +49,18 @@ Route::middleware('auth')->group(function () {
     Route::get("admin/dashboard", [DashBoardController::class, "show"]);
 
     // admin/user
-    Route::get("admin/user/list", [AdminUserController::class, "list"])->name('user.list');
+    Route::get("admin/user/list", [AdminUserController::class, "list"])->name('user.list')->can('user.list');
 
     //add
-    Route::get("admin/user/add", [AdminUserController::class, "add"])->name('user.add');
-    Route::post("admin/user/store", [AdminUserController::class, "store"])->name('user.store');
-
+    Route::get("admin/user/add", [AdminUserController::class, "add"])->name('user.add')->can('user.add');
+    Route::post("admin/user/store", [AdminUserController::class, "store"])->name('user.store')->can('user.add');
     //delete
-    Route::get("admin/user/delete/{id}", [AdminUserController::class, "delete"])->name("delete-user");
-
+    Route::get("admin/user/delete/{id}", [AdminUserController::class, "delete"])->name("delete-user")->can('user.delete');
     //select option
     Route::get("admin/user/action", [AdminUserController::class, "action"]);
-
     //update
-    Route::get("admin/user/edit{id}", [AdminUserController::class, "edit"])->name('user.edit');
-    Route::post("admin/user/update", [AdminUserController::class, "update"])->name('user.update');
+    Route::get("admin/user/edit{id}", [AdminUserController::class, "edit"])->name('user.edit')->can('user.update');
+    Route::post("admin/user/update", [AdminUserController::class, "update"])->name('user.update')->can('user.update');
 
     // end admin user 
 
@@ -74,44 +72,42 @@ Route::middleware('auth')->group(function () {
     Route::get("admin/permission/delete/{id}", [PermissionController::class, "delete"])->name("permission.delete");
 
     //admin role
-    Route::get("admin/role/list", [RoleController::class, "getList"])->name("role.list");
+    Route::get("admin/role/list", [RoleController::class, "getList"])->name("role.list")->can('role.list');
     Route::get("admin/role/add", [RoleController::class, "add"])->name("role.add")->can('role.add');
     Route::post("admin/role/store", [RoleController::class, "store"])->name("role.store")->can('role.add');
-    Route::get("admin/role/edit/{role}", [RoleController::class, "edit"])->name("role.edit")->can('role.edit');
-    Route::post("admin/role/update/{role}", [RoleController::class, "update"])->name("role.update")->can('role.edit');
+    Route::get("admin/role/edit/{role}", [RoleController::class, "edit"])->name("role.edit")->can('role.update');
+    Route::post("admin/role/update/{role}", [RoleController::class, "update"])->name("role.update")->can('role.update');
     Route::get("admin/role/delete/{role}", [RoleController::class, "delete"])->name("role.delete")->can('role.delete');
-    Route::get("admin/role/action", [RoleController::class, "action"])->name("role.action");
+    Route::get("admin/role/action", [RoleController::class, "action"])->name("role.action")->can('role.action');
 
     //module categories post
     //add
-    Route::get("category/post/list", [CategoriesPostController::class, "list"])->name("category.post.list");
-    Route::post("category/post/store", [CategoriesPostController::class, "store"])->name("category.post.store");
+    Route::get("category/post/list", [CategoriesPostController::class, "list"])->name("category.post.list")->can('category-post.list');
+    Route::post("category/post/store", [CategoriesPostController::class, "store"])->name("category.post.store")->can('category-post.add');
     //update
-    // Route::get('category/edit/{id}', [CategoriesPostController::class, 'edit'])->name('category.post.edit');
-    Route::put('/category/post/update/{id}', [CategoriesPostController::class, 'update'])->name('category.post.update');
-    Route::get('/category/post/delete/{id}', [CategoriesPostController::class, 'delete'])->name('category.post.delete');
-    Route::get('/category/post/action', [CategoriesPostController::class, 'action'])->name('category.post.action');
-
-    //module post
-    Route::get("admin/post/list", [PostController::class, "list"])->name("post.list");
-    Route::get("admin/post/add", [PostController::class, "add"])->name("post.add");
-    Route::post("admin/post/store", [PostController::class, "store"])->name("post.store");
-    Route::get("admin/post/edit", [PostController::class, "edit"])->name("post.edit");
-    Route::post("admin/post/update", [PostController::class, "update"])->name("post.update");
-    Route::get("admin/post/delete/{id}", [PostController::class, "delete"])->name("post.delete");
-    Route::get("admin/post/action", [PostController::class, "action"])->name("post.action");
+    Route::put('/category/post/update/{id}', [CategoriesPostController::class, 'update'])->name('category.post.update')->can('category-post.update');
+    Route::get('/category/post/delete/{id}', [CategoriesPostController::class, 'delete'])->name('category.post.delete')->can('category-post.delete');
+    Route::get('/category/post/action', [CategoriesPostController::class, 'action'])->name('category.post.action')->can('category-post.action');
 
     //category post parent
-    Route::get('/category/post/subcategories/{parentId}', [CategoriesPostController::class, 'showSubcategories'])->name('category.post.subcategories');
+    Route::get('/category/post/subcategories/{parentId}', [CategoriesPostController::class, 'showSubcategories'])->name('category.post.subcategories')->can('category-post.subcategory');
 
+    //module post
+    Route::get("admin/post/list", [PostController::class, "list"])->name("post.list")->can('post.list');
+    Route::get("admin/post/add", [PostController::class, "add"])->name("post.add")->can('post.add');
+    Route::post("admin/post/store", [PostController::class, "store"])->name("post.store")->can('post.add');
+    Route::get("admin/post/edit", [PostController::class, "edit"])->name("post.edit")->can('post.update');
+    Route::post("admin/post/update", [PostController::class, "update"])->name("post.update")->can('post.update');
+    Route::get("admin/post/delete/{id}", [PostController::class, "delete"])->name("post.delete")->can('post.delete');
+    Route::get("admin/post/action", [PostController::class, "action"])->name("post.action")->can('post.action');
 
     //molude categories product
-    Route::get("category/product/list", [CategoriesProductController::class, "list"])->name("category.product.list");
-    Route::post("category/product/store", [CategoriesProductController::class, "store"])->name("category.product.store");
-    Route::put("category/product/update/{id}", [CategoriesProductController::class, "update"])->name("category.product.update");
-    Route::get("category/product/delete/{id}", [CategoriesProductController::class, "delete"])->name("category.product.delete");
-    Route::get('/category/product/action', [CategoriesProductController::class, 'action'])->name('category.product.action');
-    Route::get('category/product/subcategories/{parentId}', [CategoriesProductController::class, 'showSubcategories'])->name('category.product.subcategories');
+    Route::get("category/product/list", [CategoriesProductController::class, "list"])->name("category.product.list")->can('category-product.list');
+    Route::post("category/product/store", [CategoriesProductController::class, "store"])->name("category.product.store")->can('category-product.add');
+    Route::put("category/product/update/{id}", [CategoriesProductController::class, "update"])->name("category.product.update")->can('category-product.update');
+    Route::get("category/product/delete/{id}", [CategoriesProductController::class, "delete"])->name("category.product.delete")->can('category-product.delete');
+    Route::get('/category/product/action', [CategoriesProductController::class, 'action'])->name('category.product.action')->can('category-product.action');
+    Route::get('category/product/subcategories/{parentId}', [CategoriesProductController::class, 'showSubcategories'])->name('category.product.subcategories')->can('category-product.subcategory');
 
     //molude product
     Route::get("admin/product/list", [ProductController::class, "list"])->name("product.list")->can('product.list');
@@ -120,7 +116,7 @@ Route::middleware('auth')->group(function () {
     Route::get("admin/product/edit/{id}", [ProductController::class, "edit"])->name("product.edit")->can('product.update');
     Route::post("admin/product/update/{id}", [ProductController::class, "update"])->name("product.update")->can('product.update');
     Route::get("admin/product/delete/{id}", [ProductController::class, "delete"])->name("product.delete")->can('product.delete');
-    Route::get("admin/product/action", [ProductController::class, "action"])->name("product.action");
+    Route::get("admin/product/action", [ProductController::class, "action"])->name("product.action")->can('product.action');
 
     //model images
     Route::get('/admin/image/list', [ImageController::class, 'list'])->name('admin.image.list');
@@ -134,16 +130,16 @@ Route::middleware('auth')->group(function () {
     Route::get("admin/page/action", [PageController::class, "action"])->name("page.action");
 
     //model list order
-    Route::get('/admin/order/list', [OrderController::class, 'list'])->name('order.list');
-    Route::post("/admin/order/update", [OrderController::class, "update"])->name("order.update");
+    Route::get('/admin/order/list', [OrderController::class, 'list'])->name('order.list')->can('order.list');
+    Route::post("/admin/order/update", [OrderController::class, "update"])->name("order.update")->can('order.update');
 
     //model customer
-    Route::get("/admin/customer/potential", [CustomerController::class, "potential"])->name("customer.potential");
-    Route::get("/admin/customer/purchased", [CustomerController::class, "purchased"])->name("customer.purchased");
-    Route::post("/admin/customer/update", [CustomerController::class, "update"])->name("customer.update");
+    Route::get("/admin/customer/potential", [CustomerController::class, "potential"])->name("customer.potential")->can('customer.potential');
+    Route::get("/admin/customer/purchased", [CustomerController::class, "purchased"])->name("customer.purchased")->can('customer.purchased');
+    Route::post("/admin/customer/update", [CustomerController::class, "update"])->name("customer.update")->can('customer.update');
 
     //model admin notification
-    Route::post("/admin/notification/update/{id}", [AdminNotificationController::class, "update"])->name("admin.notification.update");
+    Route::post("/admin/notification/update/{id}", [AdminNotificationController::class, "update"])->name("admin.notification.update")->can('notification.update');
 });
 //layout 
 
@@ -172,8 +168,3 @@ Route::get("trang-chu/bai-viet/chi-tiet/{post:slug}", [PostController::class, "d
 //page contact
 Route::get("trang-chu/lien-he", [CustomerController::class, "contact"])->name("customer.contact");
 Route::get("trang-chu/dat-ban", [CustomerController::class, "booking"])->name("customer.booking");
-
-
-
-
-

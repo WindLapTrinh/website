@@ -81,7 +81,7 @@ class RoleController extends Controller
         ]);
         $role->permissions()->sync($request->input('permission_id', []));
 
-        return redirect()->route('role.list')->with('status', 'Đã cập nhập vai trò thành công');
+        return redirect()->route('role.list')->with('status', 'Đã cập nhập thông tin vai trò thành công');
     }
 
     function delete(Role $role){

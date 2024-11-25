@@ -48,7 +48,7 @@
                         <div class="card-body">
                             @foreach ($modulePermissions as $permission)
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         {!! Form::checkbox("permission_id[]", $permission->id, in_array($permission->id, $role->permissions->pluck('id')->toArray()), ["id" => $permission->slug,"class" => "permission"]) !!}
                                         {!! Form::label($permission->slug, $permission->name)!!}
                                     </div>
@@ -58,7 +58,7 @@
                     </div>
                 @endforeach
                 
-                <input type="submit" name="btn-add" class="btn btn-primary custom-bottom" value="Thêm mới">
+                <input type="submit" name="btn-add" class="btn btn-primary custom-bottom" value="Cập nhập">
             {!! Form::close() !!}
 
         </div>

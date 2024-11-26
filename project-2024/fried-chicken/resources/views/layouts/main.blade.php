@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
     <link href={{ asset('css/bootstrap/bootstrap-theme.min.css') }} rel="stylesheet" type="text/css" />
     <link href={{ asset('css/bootstrap/bootstrap.min.css') }} rel="stylesheet" type="text/css" />
@@ -37,7 +35,7 @@
     <script src={{ asset('js/bootstrap/bootstrap.min.js') }} type="text/javascript"></script>
     <script src={{ asset('js/carousel/owl.carousel.js') }} type="text/javascript"></script>
     <script src={{ asset('js/main.js') }} type="text/javascript"></script>
-    <script src={{ asset('js/template/main.js') }} type="text/javascript"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 </head>
 
 <body>
@@ -279,7 +277,7 @@
                 js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=849340975164592";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
-        </script>
+        </script>        
 </body>
 
 </html>

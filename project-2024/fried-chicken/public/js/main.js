@@ -1,3 +1,6 @@
+import flatpickr from "flatpickr";
+import { Vietnamese } from "flatpickr/dist/l10n/vi.js";
+
 $(document).ready(function () {
 //  SLIDER
     var slider = $('#slider-wp .section-detail');
@@ -166,11 +169,4 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('filterProductForm').submit();
         });
     });
-});
-
-$('.datepicker').datepicker({
-    format: 'dd/mm/yyyy', // Định dạng ngày
-    autoclose: true, // Tự động đóng khi chọn
-    todayHighlight: true, // Đánh dấu ngày hiện tại
-    startDate: '0d' // Chỉ cho phép chọn ngày từ hôm nay trở đi
 });

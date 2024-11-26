@@ -325,3 +325,32 @@ body {
     transition: box-shadow 0.3s ease, transform 0.3s ease; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+.flatpickr-calendar {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flatpickr-month {
+    background-color: #ff3b3b;
+    color: #fff;
+    font-weight: bold;
+}
+
+.flatpickr-weekdays {
+    color: #333;
+    font-weight: bold;
+}
+
+.flatpickr-day {
+    color: #000;
+    font-weight: normal;
+    border-radius: 4px;
+}
+
+.flatpickr-day.today {
+    background: #ff3b3b;
+    color: #fff;
+}

@@ -49,12 +49,13 @@ $(function (e) {
     $('#file-export').DataTable({
         dom: 'Bfrtip',
         buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print'
+            'excel', 'print'
         ],
         language: {
             searchPlaceholder: 'Search...',
             sSearch: '',
         },
+        
     });
     // file export datatable
 

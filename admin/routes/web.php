@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminUserController;
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DashBoardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PermissionController;
@@ -26,7 +27,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('home', [HomeController::class, 'index'])->name('home');
+// Route::get('home', [HomeController::class, 'index'])->name('home');
 
 
 Route::middleware('auth')->group(function(){
@@ -53,19 +54,23 @@ Route::middleware('auth')->group(function(){
     // end admin user 
 
     // admin permsision 
-    Route::get("admin/permission/add", [PermissionController::class, 'add'])->name('permission.add');
-    Route::post("admin/permission/store", [PermissionController::class, 'store'])->name('permission.store');
-    Route::get("admin/permission/edit/{id}", [PermissionController::class, "edit"])->name("permission.edit");
-    Route::post("admin/permission/update/{id}", [PermissionController::class, "update"])->name("permission.update");
-    Route::get("admin/permission/delete/{id}", [PermissionController::class, "delete"])->name("permission.delete");
+    // Route::get("admin/permission/add", [PermissionController::class, 'add'])->name('permission.add');
+    // Route::post("admin/permission/store", [PermissionController::class, 'store'])->name('permission.store');
+    // Route::get("admin/permission/edit/{id}", [PermissionController::class, "edit"])->name("permission.edit");
+    // Route::post("admin/permission/update/{id}", [PermissionController::class, "update"])->name("permission.update");
+    // Route::get("admin/permission/delete/{id}", [PermissionController::class, "delete"])->name("permission.delete");
 
     //admin role
-    Route::get("admin/role/list", [RoleController::class, "getList"])->name("role.list");
-    Route::get("admin/role/add", [RoleController::class, "add"])->name("role.add")->can('role.add');
-    Route::post("admin/role/store", [RoleController::class, "store"])->name("role.store")->can('role.add');
-    Route::get("admin/role/edit/{role}", [RoleController::class, "edit"])->name("role.edit")->can('role.edit');
-    Route::post("admin/role/update/{role}", [RoleController::class, "update"])->name("role.update")->can('role.edit');
-    Route::get("admin/role/delete/{role}", [RoleController::class, "delete"])->name("role.delete")->can('role.delete');
+    // Route::get("admin/role/list", [RoleController::class, "getList"])->name("role.list");
+    // Route::get("admin/role/add", [RoleController::class, "add"])->name("role.add")->can('role.add');
+    // Route::post("admin/role/store", [RoleController::class, "store"])->name("role.store")->can('role.add');
+    // Route::get("admin/role/edit/{role}", [RoleController::class, "edit"])->name("role.edit")->can('role.edit');
+    // Route::post("admin/role/update/{role}", [RoleController::class, "update"])->name("role.update")->can('role.edit');
+    // Route::get("admin/role/delete/{role}", [RoleController::class, "delete"])->name("role.delete")->can('role.delete');
+
+    //admin customer
+    Route::get("admin/customer/list", [CustomerController::class, "list"])->name("customer.list");
+
 
 });
 

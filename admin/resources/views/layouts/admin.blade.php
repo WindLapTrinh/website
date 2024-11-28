@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-width="fullwidth" data-menu-styles="light" data-toggled="close">
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light"
+    data-width="fullwidth" data-menu-styles="light" data-toggled="close">
 
 <head>
 
@@ -10,45 +11,46 @@
     <title> ZYNIX - Bootstrap 5 Premium Admin & Dashboard Template </title>
     <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
     <meta name="Author" content="Wcsrm Software Private Limited">
-	<meta name="keywords" content="bootstrap template, admin panel bootstrap, bootstrap dashboard, admin, admin dashboard template, dashboard template, html css templates, dashboard, template dashboard,  bootstrap dashboard template, dashboard html css, bootstrap admin dashboard,  bootstrap admin, dashboard template, bootstrap5 admin template">
+    <meta name="keywords"
+        content="bootstrap template, admin panel bootstrap, bootstrap dashboard, admin, admin dashboard template, dashboard template, html css templates, dashboard, template dashboard,  bootstrap dashboard template, dashboard html css, bootstrap admin dashboard,  bootstrap admin, dashboard template, bootstrap5 admin template">
 
-    
+
     <!-- Favicon -->
-    <link rel="icon" href={{asset("assets/images/brand-logos/favicon.ico")}} type="image/x-icon">
-    
+    <link rel="icon" href={{ asset('assets/images/brand-logos/favicon.ico') }} type="image/x-icon">
+
     <!-- Choices JS -->
-    <script src={{asset("assets/libs/choices.js/public/assets/scripts/choices.min.js")}}></script>
+    <script src={{ asset('assets/libs/choices.js/public/assets/scripts/choices.min.js') }}></script>
 
     <!-- Main Theme Js -->
-    <script src={{asset("assets/js/main.js")}}></script>
-    
+    <script src={{ asset('assets/js/main.js') }}></script>
+
     <!-- Bootstrap Css -->
-    <link id="style" href={{asset("assets/libs/bootstrap/css/bootstrap.min.css")}} rel="stylesheet" >
+    <link id="style" href={{ asset('assets/libs/bootstrap/css/bootstrap.min.css') }} rel="stylesheet">
 
     <!-- Style Css -->
-    <link href={{asset("assets/css/styles.css")}} rel="stylesheet" >
+    <link href={{ asset('assets/css/styles.css') }} rel="stylesheet">
 
     <!-- Icons Css -->
-    <link href={{asset("assets/css/icons.css")}} rel="stylesheet" >
+    <link href={{ asset('assets/css/icons.css') }} rel="stylesheet">
 
     <!-- Node Waves Css -->
-    <link href={{asset("assets/libs/node-waves/waves.min.css")}} rel="stylesheet" > 
+    <link href={{ asset('assets/libs/node-waves/waves.min.css') }} rel="stylesheet">
 
     <!-- Simplebar Css -->
-    <link href={{asset("assets/libs/simplebar/simplebar.min.css")}} rel="stylesheet" >
-    
+    <link href={{ asset('assets/libs/simplebar/simplebar.min.css') }} rel="stylesheet">
+
     <!-- Color Picker Css -->
-    <link rel="stylesheet" href={{asset("assets/libs/flatpickr/flatpickr.min.css")}}>
-    <link rel="stylesheet" href={{asset("assets/libs/@simonwep/pickr/themes/nano.min.css")}}>
+    <link rel="stylesheet" href={{ asset('assets/libs/flatpickr/flatpickr.min.css') }}>
+    <link rel="stylesheet" href={{ asset('assets/libs/@simonwep/pickr/themes/nano.min.css') }}>
 
     <!-- Choices Css -->
-    <link rel="stylesheet" href={{asset("assets/libs/choices.js/public/assets/styles/choices.min.css")}}>
+    <link rel="stylesheet" href={{ asset('assets/libs/choices.js/public/assets/styles/choices.min.css') }}>
 
     <!-- FlatPickr CSS -->
-    <link rel="stylesheet" href={{asset("assets/libs/flatpickr/flatpickr.min.css")}}>
+    <link rel="stylesheet" href={{ asset('assets/libs/flatpickr/flatpickr.min.css') }}>
 
     <!-- Auto Complete CSS -->
-    <link rel="stylesheet" href={{asset("assets/libs/@tarekraafat/autocomplete.js/css/autoComplete.css")}}>
+    <link rel="stylesheet" href={{ asset('assets/libs/@tarekraafat/autocomplete.js/css/autoComplete.css') }}>
 
 
 </head>
@@ -64,17 +66,19 @@
             </div>
             <nav class="border-top border-block-start-dashed">
                 <div class="nav nav-tabs nav-justified" id="switcher-main-tab" role="tablist">
-                    <button class="nav-link active" id="switcher-home-tab" data-bs-toggle="tab" data-bs-target="#switcher-home"
-                        type="button" role="tab" aria-controls="switcher-home" aria-selected="true">Theme Styles</button>
-                    <button class="nav-link" id="switcher-profile-tab" data-bs-toggle="tab" data-bs-target="#switcher-profile"
-                        type="button" role="tab" aria-controls="switcher-profile" aria-selected="false">Theme Colors</button>
+                    <button class="nav-link active" id="switcher-home-tab" data-bs-toggle="tab"
+                        data-bs-target="#switcher-home" type="button" role="tab" aria-controls="switcher-home"
+                        aria-selected="true">Theme Styles</button>
+                    <button class="nav-link" id="switcher-profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#switcher-profile" type="button" role="tab"
+                        aria-controls="switcher-profile" aria-selected="false">Theme Colors</button>
                 </div>
             </nav>
         </div>
         <div class="offcanvas-body">
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active border-0" id="switcher-home" role="tabpanel" aria-labelledby="switcher-home-tab"
-                    tabindex="0">
+                <div class="tab-pane fade show active border-0" id="switcher-home" role="tabpanel"
+                    aria-labelledby="switcher-home-tab" tabindex="0">
                     <div class="">
                         <p class="switcher-style-head">Theme Color Mode:</p>
                         <div class="row switcher-style gx-0">
@@ -83,8 +87,8 @@
                                     <label class="form-check-label" for="switcher-light-theme">
                                         Light
                                     </label>
-                                    <input class="form-check-input" type="radio" name="theme-style" id="switcher-light-theme"
-                                        checked>
+                                    <input class="form-check-input" type="radio" name="theme-style"
+                                        id="switcher-light-theme" checked>
                                 </div>
                             </div>
                             <div class="col-4">
@@ -92,7 +96,8 @@
                                     <label class="form-check-label" for="switcher-dark-theme">
                                         Dark
                                     </label>
-                                    <input class="form-check-input" type="radio" name="theme-style" id="switcher-dark-theme">
+                                    <input class="form-check-input" type="radio" name="theme-style"
+                                        id="switcher-dark-theme">
                                 </div>
                             </div>
                         </div>
@@ -105,7 +110,8 @@
                                     <label class="form-check-label" for="switcher-ltr">
                                         LTR
                                     </label>
-                                    <input class="form-check-input" type="radio" name="direction" id="switcher-ltr" checked>
+                                    <input class="form-check-input" type="radio" name="direction" id="switcher-ltr"
+                                        checked>
                                 </div>
                             </div>
                             <div class="col-4">
@@ -113,7 +119,8 @@
                                     <label class="form-check-label" for="switcher-rtl">
                                         RTL
                                     </label>
-                                    <input class="form-check-input" type="radio" name="direction" id="switcher-rtl">
+                                    <input class="form-check-input" type="radio" name="direction"
+                                        id="switcher-rtl">
                                 </div>
                             </div>
                         </div>
@@ -126,8 +133,8 @@
                                     <label class="form-check-label" for="switcher-vertical">
                                         Vertical
                                     </label>
-                                    <input class="form-check-input" type="radio" name="navigation-style" id="switcher-vertical"
-                                        checked>
+                                    <input class="form-check-input" type="radio" name="navigation-style"
+                                        id="switcher-vertical" checked>
                                 </div>
                             </div>
                             <div class="col-4">
@@ -249,8 +256,8 @@
                                     <label class="form-check-label" for="switcher-regular">
                                         Regular
                                     </label>
-                                    <input class="form-check-input" type="radio" name="page-styles" id="switcher-regular"
-                                    checked>
+                                    <input class="form-check-input" type="radio" name="page-styles"
+                                        id="switcher-regular" checked>
                                 </div>
                             </div>
                             <div class="col-4">
@@ -258,7 +265,8 @@
                                     <label class="form-check-label" for="switcher-classic">
                                         Classic
                                     </label>
-                                    <input class="form-check-input" type="radio" name="page-styles" id="switcher-classic">
+                                    <input class="form-check-input" type="radio" name="page-styles"
+                                        id="switcher-classic">
                                 </div>
                             </div>
                             <div class="col-4">
@@ -266,7 +274,8 @@
                                     <label class="form-check-label" for="switcher-modern">
                                         Modern
                                     </label>
-                                    <input class="form-check-input" type="radio" name="page-styles" id="switcher-modern">
+                                    <input class="form-check-input" type="radio" name="page-styles"
+                                        id="switcher-modern">
                                 </div>
                             </div>
                         </div>
@@ -279,8 +288,8 @@
                                     <label class="form-check-label" for="switcher-default-width">
                                         compact
                                     </label>
-                                    <input class="form-check-input" type="radio" name="layout-width" id="switcher-default-width"
-                                       >
+                                    <input class="form-check-input" type="radio" name="layout-width"
+                                        id="switcher-default-width">
                                 </div>
                             </div>
                             <div class="col-5">
@@ -288,7 +297,8 @@
                                     <label class="form-check-label" for="switcher-full-width">
                                         Full Width
                                     </label>
-                                    <input class="form-check-input" type="radio" name="layout-width" id="switcher-full-width"  checked>
+                                    <input class="form-check-input" type="radio" name="layout-width"
+                                        id="switcher-full-width" checked>
                                 </div>
                             </div>
                             <div class="col-3">
@@ -296,7 +306,8 @@
                                     <label class="form-check-label" for="switcher-boxed">
                                         Boxed
                                     </label>
-                                    <input class="form-check-input" type="radio" name="layout-width" id="switcher-boxed">
+                                    <input class="form-check-input" type="radio" name="layout-width"
+                                        id="switcher-boxed">
                                 </div>
                             </div>
                         </div>
@@ -309,8 +320,8 @@
                                     <label class="form-check-label" for="switcher-menu-fixed">
                                         Fixed
                                     </label>
-                                    <input class="form-check-input" type="radio" name="menu-positions" id="switcher-menu-fixed"
-                                        checked>
+                                    <input class="form-check-input" type="radio" name="menu-positions"
+                                        id="switcher-menu-fixed" checked>
                                 </div>
                             </div>
                             <div class="col-4">
@@ -318,7 +329,8 @@
                                     <label class="form-check-label" for="switcher-menu-scroll">
                                         Scrollable
                                     </label>
-                                    <input class="form-check-input" type="radio" name="menu-positions" id="switcher-menu-scroll">
+                                    <input class="form-check-input" type="radio" name="menu-positions"
+                                        id="switcher-menu-scroll">
                                 </div>
                             </div>
                         </div>
@@ -370,7 +382,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade border-0" id="switcher-profile" role="tabpanel" aria-labelledby="switcher-profile-tab" tabindex="0">
+                <div class="tab-pane fade border-0" id="switcher-profile" role="tabpanel"
+                    aria-labelledby="switcher-profile-tab" tabindex="0">
                     <div>
                         <div class="theme-colors">
                             <p class="switcher-style-head">Menu Colors:</p>
@@ -391,9 +404,9 @@
                                         id="switcher-menu-primary">
                                 </div>
                                 <div class="form-check switch-select me-3">
-                                    <input class="form-check-input color-input color-gradient" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Gradient Menu" type="radio" name="menu-colors"
-                                        id="switcher-menu-gradient">
+                                    <input class="form-check-input color-input color-gradient"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Gradient Menu"
+                                        type="radio" name="menu-colors" id="switcher-menu-gradient">
                                 </div>
                                 <div class="form-check switch-select me-3">
                                     <input class="form-check-input color-input color-transparent"
@@ -401,38 +414,40 @@
                                         type="radio" name="menu-colors" id="switcher-menu-transparent">
                                 </div>
                             </div>
-                            <div class="px-4 pb-3 text-muted fs-11">Note:If you want to change color Menu dynamically change from below Theme Primary color picker</div>
+                            <div class="px-4 pb-3 text-muted fs-11">Note:If you want to change color Menu dynamically
+                                change from below Theme Primary color picker</div>
                         </div>
                         <div class="theme-colors">
                             <p class="switcher-style-head">Header Colors:</p>
                             <div class="d-flex switcher-style pb-2">
                                 <div class="form-check switch-select me-3">
                                     <input class="form-check-input color-input color-white" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Light Header" type="radio" name="header-colors"
-                                        id="switcher-header-light" checked>
+                                        data-bs-placement="top" title="Light Header" type="radio"
+                                        name="header-colors" id="switcher-header-light" checked>
                                 </div>
                                 <div class="form-check switch-select me-3">
                                     <input class="form-check-input color-input color-dark" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Dark Header" type="radio" name="header-colors"
-                                        id="switcher-header-dark">
+                                        data-bs-placement="top" title="Dark Header" type="radio"
+                                        name="header-colors" id="switcher-header-dark">
                                 </div>
                                 <div class="form-check switch-select me-3">
                                     <input class="form-check-input color-input color-primary" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Color Header" type="radio" name="header-colors"
-                                        id="switcher-header-primary">
+                                        data-bs-placement="top" title="Color Header" type="radio"
+                                        name="header-colors" id="switcher-header-primary">
                                 </div>
                                 <div class="form-check switch-select me-3">
-                                    <input class="form-check-input color-input color-gradient" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Gradient Header" type="radio" name="header-colors"
-                                        id="switcher-header-gradient">
+                                    <input class="form-check-input color-input color-gradient"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Gradient Header"
+                                        type="radio" name="header-colors" id="switcher-header-gradient">
                                 </div>
                                 <div class="form-check switch-select me-3">
-                                    <input class="form-check-input color-input color-transparent" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Transparent Header" type="radio" name="header-colors"
-                                        id="switcher-header-transparent">
+                                    <input class="form-check-input color-input color-transparent"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Transparent Header"
+                                        type="radio" name="header-colors" id="switcher-header-transparent">
                                 </div>
                             </div>
-                            <div class="px-4 pb-3 text-muted fs-11">Note:If you want to change color Header dynamically change from below Theme Primary color picker</div>
+                            <div class="px-4 pb-3 text-muted fs-11">Note:If you want to change color Header dynamically
+                                change from below Theme Primary color picker</div>
                         </div>
                         <div class="theme-colors">
                             <p class="switcher-style-head">Theme Primary:</p>
@@ -446,20 +461,21 @@
                                         name="theme-primary" id="switcher-primary1">
                                 </div>
                                 <div class="form-check switch-select me-3">
-                                    <input class="form-check-input color-input color-primary-3" type="radio" name="theme-primary"
-                                        id="switcher-primary2">
+                                    <input class="form-check-input color-input color-primary-3" type="radio"
+                                        name="theme-primary" id="switcher-primary2">
                                 </div>
                                 <div class="form-check switch-select me-3">
-                                    <input class="form-check-input color-input color-primary-4" type="radio" name="theme-primary"
-                                        id="switcher-primary3">
+                                    <input class="form-check-input color-input color-primary-4" type="radio"
+                                        name="theme-primary" id="switcher-primary3">
                                 </div>
                                 <div class="form-check switch-select me-3">
-                                    <input class="form-check-input color-input color-primary-5" type="radio" name="theme-primary"
-                                        id="switcher-primary4">
+                                    <input class="form-check-input color-input color-primary-5" type="radio"
+                                        name="theme-primary" id="switcher-primary4">
                                 </div>
                                 <div class="form-check switch-select ps-0 mt-1 color-primary-light">
                                     <div class="theme-container-primary"></div>
-                                    <div class="pickr-container-primary"  onchange="updateChartColor(this.value)"></div>
+                                    <div class="pickr-container-primary" onchange="updateChartColor(this.value)">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -475,8 +491,8 @@
                                         name="theme-background" id="switcher-background1">
                                 </div>
                                 <div class="form-check switch-select me-3">
-                                    <input class="form-check-input color-input color-bg-3" type="radio" name="theme-background"
-                                        id="switcher-background2">
+                                    <input class="form-check-input color-input color-bg-3" type="radio"
+                                        name="theme-background" id="switcher-background2">
                                 </div>
                                 <div class="form-check switch-select me-3">
                                     <input class="form-check-input color-input color-bg-4" type="radio"
@@ -486,7 +502,8 @@
                                     <input class="form-check-input color-input color-bg-5" type="radio"
                                         name="theme-background" id="switcher-background4">
                                 </div>
-                                <div class="form-check switch-select ps-0 mt-1 tooltip-static-demo color-bg-transparent">
+                                <div
+                                    class="form-check switch-select ps-0 mt-1 tooltip-static-demo color-bg-transparent">
                                     <div class="theme-container-background"></div>
                                     <div class="pickr-container-background"></div>
                                 </div>
@@ -504,8 +521,8 @@
                                         name="menu-background" id="switcher-bg-img1">
                                 </div>
                                 <div class="form-check switch-select m-2">
-                                    <input class="form-check-input bgimage-input bg-img3" type="radio" name="menu-background"
-                                        id="switcher-bg-img2">
+                                    <input class="form-check-input bgimage-input bg-img3" type="radio"
+                                        name="menu-background" id="switcher-bg-img2">
                                 </div>
                                 <div class="form-check switch-select m-2">
                                     <input class="form-check-input bgimage-input bg-img4" type="radio"
@@ -520,7 +537,7 @@
                     </div>
                 </div>
                 <div class="d-block canvas-footer flex-wrap">
-                    <a href="javascript:void(0);" id="reset-all" class="btn btn-danger m-1 w-100">Reset</a> 
+                    <a href="javascript:void(0);" id="reset-all" class="btn btn-danger m-1 w-100">Reset</a>
                 </div>
             </div>
         </div>
@@ -529,8 +546,8 @@
 
 
     <!-- Loader -->
-    <div id="loader" >
-        <img src="../assets/images/media/loader.svg" alt="">
+    <div id="loader">
+        <img src={{ asset('assets/images/media/loader.svg') }} alt="">
     </div>
     <!-- Loader -->
 
@@ -548,10 +565,14 @@
                     <div class="header-element">
                         <div class="horizontal-logo">
                             <a href="index.html" class="header-logo">
-                                <img src="../assets/images/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo">
-                                <img src="../assets/images/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo">
-                                <img src="../assets/images/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark">
-                                <img src="../assets/images/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark">
+                                <img src={{ asset('assets/images/brand-logos/desktop-logo.png') }} alt="logo"
+                                    class="desktop-logo">
+                                <img src={{ asset('assets/images/brand-logos/toggle-logo.png') }} alt="logo"
+                                    class="toggle-logo">
+                                <img src={{ asset('assets/images/brand-logos/desktop-dark.png') }} alt="logo"
+                                    class="desktop-dark">
+                                <img src={{ asset('assets/images/brand-logos/toggle-dark.png') }} alt="logo"
+                                    class="toggle-dark">
                             </a>
                         </div>
                     </div>
@@ -562,14 +583,14 @@
                         <!-- Start::header-link -->
                         <a aria-label="Hide Sidebar" class="sidemenu-toggle header-link" data-bs-toggle="sidebar"
                             href="javascript:void(0);">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon menu-btn" width="32" height="32"
-                                fill="#000000" viewBox="0 0 256 256">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon menu-btn" width="32"
+                                height="32" fill="#000000" viewBox="0 0 256 256">
                                 <path
                                     d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
                                 </path>
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon menu-btn-close" width="32"
-                                height="32" fill="#000000" viewBox="0 0 256 256">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon menu-btn-close"
+                                width="32" height="32" fill="#000000" viewBox="0 0 256 256">
                                 <path
                                     d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
                                 </path>
@@ -578,6 +599,7 @@
                         <!-- End::header-link -->
                     </div>
                     <!-- End::header-element -->
+
 
                 </div>
                 <!-- End::header-content-left -->
@@ -599,10 +621,10 @@
                     <!-- Start::header-element -->
                     <li class="header-element search-dropdown dropdown d-md-block d-none">
                         <!-- Start::header-link|dropdown-toggle -->
-                        <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-auto-close="outside"
-                            data-bs-toggle="dropdown">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon" width="32" height="32"
-                                fill="#000000" viewBox="0 0 256 256">
+                        <a href="javascript:void(0);" class="header-link dropdown-toggle"
+                            data-bs-auto-close="outside" data-bs-toggle="dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon" width="32"
+                                height="32" fill="#000000" viewBox="0 0 256 256">
                                 <path
                                     d="M228.24,219.76l-51.38-51.38a86.15,86.15,0,1,0-8.48,8.48l51.38,51.38a6,6,0,0,0,8.48-8.48ZM38,112a74,74,0,1,1,74,74A74.09,74.09,0,0,1,38,112Z">
                                 </path>
@@ -629,30 +651,33 @@
                     <!-- Start::header-element -->
                     <li class="header-element country-selector dropdown">
                         <!-- Start::header-link|dropdown-toggle -->
-                        <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-auto-close="outside"
-                            data-bs-toggle="dropdown">
+                        <a href="javascript:void(0);" class="header-link dropdown-toggle"
+                            data-bs-auto-close="outside" data-bs-toggle="dropdown">
                             <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon" viewBox="0 0 256 256">
                                 <rect width="256" height="256" fill="none" />
                                 <polyline points="240 216 184 104 128 216" fill="none" stroke="currentColor"
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                <line x1="144" y1="184" x2="224" y2="184" fill="none" stroke="currentColor"
+                                <line x1="144" y1="184" x2="224" y2="184" fill="none"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="16" />
+                                <line x1="96" y1="32" x2="96" y2="56" fill="none"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="16" />
+                                <line x1="32" y1="56" x2="160" y2="56" fill="none"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="16" />
+                                <path d="M128,56a96,96,0,0,1-96,96" fill="none" stroke="currentColor"
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                <line x1="96" y1="32" x2="96" y2="56" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="16" />
-                                <line x1="32" y1="56" x2="160" y2="56" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="16" />
-                                <path d="M128,56a96,96,0,0,1-96,96" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="16" />
-                                <path d="M69.47,88A96,96,0,0,0,160,152" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="16" />
+                                <path d="M69.47,88A96,96,0,0,0,160,152" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
                             </svg>
                         </a>
                         <!-- End::header-link|dropdown-toggle -->
                         <ul class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
                             <li>
                                 <div class="py-2 px-3">
-                                    <input class="form-control form-control-sm" type="text" placeholder="Search Here"
-                                        aria-label=".form-control-sm example">
+                                    <input class="form-control form-control-sm" type="text"
+                                        placeholder="Search Here" aria-label=".form-control-sm example">
                                 </div>
                             </li>
                             <li>
@@ -660,7 +685,7 @@
                                     href="javascript:void(0);">
                                     <div class="d-flex align-items-center">
                                         <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                            <img src="../assets/images/flags/us_flag.jpg" alt="img">
+                                            <img src={{ asset('assets/images/flags/us_flag.jpg') }} alt="img">
                                         </span>
                                         English
                                     </div>
@@ -672,7 +697,7 @@
                                     href="javascript:void(0);">
                                     <div class="d-flex align-items-center">
                                         <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                            <img src="../assets/images/flags/spain_flag.jpg" alt="img">
+                                            <img src={{ asset('assets/images/flags/spain_flag.jpg') }} alt="img">
                                         </span>
                                         español
                                     </div>
@@ -684,7 +709,8 @@
                                     href="javascript:void(0);">
                                     <div class="d-flex align-items-center">
                                         <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                            <img src="../assets/images/flags/french_flag.jpg" alt="img">
+                                            <img src={{ asset('assets/images/flags/french_flag.jpg') }}
+                                                alt="img">
                                         </span>
                                         français
                                     </div>
@@ -696,7 +722,7 @@
                                     href="javascript:void(0);">
                                     <div class="d-flex align-items-center">
                                         <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                            <img src="../assets/images/flags/uae_flag.jpg" alt="img">
+                                            <img src={{ asset('assets/images/flags/uae_flag.jpg') }} alt="img">
                                         </span>
                                         عربي
                                     </div>
@@ -708,7 +734,8 @@
                                     href="javascript:void(0);">
                                     <div class="d-flex align-items-center">
                                         <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                            <img src="../assets/images/flags/germany_flag.jpg" alt="img">
+                                            <img src={{ asset('assets/images/flags/germany_flag.jpg') }}
+                                                alt="img">
                                         </span>
                                         DE
                                     </div>
@@ -720,7 +747,7 @@
                                     href="javascript:void(0);">
                                     <div class="d-flex align-items-center">
                                         <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                            <img src="../assets/images/flags/china_flag.jpg" alt="img">
+                                            <img src={{ asset('assets/images/flags/china_flag.jpg') }} alt="img">
                                         </span>
                                         中国人
                                     </div>
@@ -737,36 +764,47 @@
                         <a href="javascript:void(0);" class="header-link layout-setting">
                             <span class="light-layout">
                                 <!-- Start::header-link-icon -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon" viewBox="0 0 256 256">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon"
+                                    viewBox="0 0 256 256">
                                     <rect width="256" height="256" fill="none" />
                                     <path d="M108.11,28.11A96.09,96.09,0,0,0,227.89,147.89,96,96,0,1,1,108.11,28.11Z"
-                                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="16" />
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
                                 </svg>
                                 <!-- End::header-link-icon -->
                             </span>
                             <span class="dark-layout">
                                 <!-- Start::header-link-icon -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon" viewBox="0 0 256 256">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon"
+                                    viewBox="0 0 256 256">
                                     <rect width="256" height="256" fill="none" />
-                                    <line x1="128" y1="40" x2="128" y2="32" fill="none" stroke="currentColor"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                    <circle cx="128" cy="128" r="56" fill="none" stroke="currentColor" stroke-linecap="round"
+                                    <line x1="128" y1="40" x2="128" y2="32"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
                                         stroke-linejoin="round" stroke-width="16" />
-                                    <line x1="64" y1="64" x2="56" y2="56" fill="none" stroke="currentColor"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                    <line x1="64" y1="192" x2="56" y2="200" fill="none" stroke="currentColor"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                    <line x1="192" y1="64" x2="200" y2="56" fill="none" stroke="currentColor"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                    <line x1="192" y1="192" x2="200" y2="200" fill="none" stroke="currentColor"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                    <line x1="40" y1="128" x2="32" y2="128" fill="none" stroke="currentColor"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                    <line x1="128" y1="216" x2="128" y2="224" fill="none" stroke="currentColor"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                    <line x1="216" y1="128" x2="224" y2="128" fill="none" stroke="currentColor"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+                                    <circle cx="128" cy="128" r="56" fill="none"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="16" />
+                                    <line x1="64" y1="64" x2="56" y2="56"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <line x1="64" y1="192" x2="56" y2="200"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <line x1="192" y1="64" x2="200" y2="56"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <line x1="192" y1="192" x2="200" y2="200"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <line x1="40" y1="128" x2="32" y2="128"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <line x1="128" y1="216" x2="128" y2="224"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <line x1="216" y1="128" x2="224" y2="128"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
                                 </svg>
                                 <!-- End::header-link-icon -->
                             </span>
@@ -776,293 +814,30 @@
                     <!-- End::header-element -->
 
                     <!-- Start::header-element -->
-                    <li class="header-element cart-dropdown dropdown">
-                        <!-- Start::header-link|dropdown-toggle -->
-                        <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-auto-close="outside"
-                            data-bs-toggle="dropdown">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon" viewBox="0 0 256 256">
-                                <rect width="256" height="256" fill="none" />
-                                <rect x="32" y="48" width="192" height="160" rx="8" fill="none" stroke="currentColor"
-                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                <path d="M168,88a40,40,0,0,1-80,0" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="16" />
-                            </svg>
-                            <span class="badge bg-primary rounded-pill header-icon-badge" id="cart-icon-badge">5</span>
-                        </a>
-                        <!-- End::header-link|dropdown-toggle -->
-                        <!-- Start::main-header-dropdown -->
-                        <div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
-                            <div class="p-3">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <p class="mb-0 fs-16">Cart Items</p>
-                                    <span class="badge bg-success-transparent ms-1 fs-12" id="cart-data">5 Items</span>
-                                </div>
-                            </div>
-                            <div class="dropdown-divider"></div>
-                            <ul class="list-unstyled mb-0" id="header-cart-items-scroll">
-                                <li class="dropdown-item">
-                                    <div class="cart-dropdown-item">
-                                        <div class="d-flex align-items-center  gap-3 mb-2">
-                                            <div class="lh-1">
-                                                <span class="avatar avatar-xl p-1 bg-primary-transparent">
-                                                    <img src="../assets/images/ecommerce/png/1.png" alt="img">
-                                                </span>
-                                            </div>
-                                            <div class="flex-fill">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="fs-11 fw-medium mb-0 text-muted">Puma</p>
-                                                    <h6 class="fw-semibold mb-0 mt-1">$75<span
-                                                            class="text-decoration-line-through text-muted fw-normal ms-1 fs-13 d-inline-block">$99</span>
-                                                    </h6>
-                                                </div>
-                                                <a href="cart.html" class="fw-semibold">Classic tufted leather sofa</a>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-muted">Quantity : <span
-                                                            class="text-default fs-14 fw-medium">4
-                                                            x
-                                                            $32</span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex rounded flex-nowrap order-qnt me-1"> 
-                                             <a
-                                                    href="javascript:void(0);"
-                                                    class="badge bg-white p-1 border text-muted fs-13 me-2 product-quantity-minus"><i
-                                                        class="ri-subtract-line"></i> </a> <input type="text"
-                                                    class="form-control form-control-cart border-0 text-center w-100"
-                                                    aria-label="quantity" id="product-qty1" value="3"> <a
-                                                    href="javascript:void(0);"
-                                                    class="badge bg-white p-1 border text-muted fs-13 me-2 product-quantity-plus"><i
-                                                        class="ri-add-line"></i> </a> </div>
-                                            <div class="d-flex gap-2">
-                                                <a href="wishlist.html"
-                                                    class="btn btn-primary-light btn-sm btn-wave waves-effect waves-light border" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"><i class="ri-heart-line"></i></a>
-                                                <a href="javascript:void(0);"
-                                                    class="header-cart-remove dropdown-item-close btn btn-sm btn-icon btn-danger-light"><i
-                                                        class="ri-close-line fs-15"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-item">
-                                    <div class="cart-dropdown-item">
-                                        <div class="d-flex align-items-center  gap-3 mb-2">
-                                            <div class="lh-1">
-                                                <span class="avatar avatar-xl p-1 bg-secondary-transparent">
-                                                    <img src="../assets/images/ecommerce/png/14.png" alt="img">
-                                                </span>
-                                            </div>
-                                            <div class="flex-fill">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="fs-11 fw-medium mb-0 text-muted">Puma</p>
-                                                    <h6 class="fw-semibold mb-0 mt-1">$120<span
-                                                            class="text-decoration-line-through text-muted fw-normal ms-1 fs-13 d-inline-block">$149</span>
-                                                    </h6>
-                                                </div>
-                                                <a href="cart.html" class="fw-semibold">Polaroid Medium Camera</a>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-muted">Quantity : <span
-                                                            class="text-default fs-13 fw-medium">12 x
-                                                            $112</span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex rounded flex-nowrap order-qnt me-1"> <a
-                                                    href="javascript:void(0);"
-                                                    class="badge bg-white p-1 border text-muted fs-13 me-2 product-quantity-minus"><i
-                                                        class="ri-subtract-line"></i> </a> <input type="text"
-                                                    class="form-control form-control-cart border-0 text-center w-100"
-                                                    aria-label="quantity" id="product-qty2" value="2"> <a
-                                                    href="javascript:void(0);"
-                                                    class="badge bg-white p-1 border text-muted fs-13 me-2 product-quantity-plus"><i
-                                                        class="ri-add-line"></i> </a> </div>
-                                            <div class="d-flex gap-2">
-                                                <a href="wishlist.html"
-                                                    class="btn btn-primary-light btn-sm btn-wave waves-effect waves-light border" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"><i class="ri-heart-line"></i></a>
-                                                <a href="javascript:void(0);"
-                                                    class="header-cart-remove dropdown-item-close btn btn-sm btn-icon btn-danger-light"><i
-                                                        class="ri-close-line fs-15"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-item">
-                                    <div class="cart-dropdown-item">
-                                        <div class="d-flex align-items-center  gap-3 mb-2">
-                                            <div class="lh-1">
-                                                <span class="avatar avatar-xl p-1 bg-success-transparent">
-                                                    <img src="../assets/images/ecommerce/png/33.png" alt="img">
-                                                </span>
-                                            </div>
-                                            <div class="flex-fill">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="fs-11 fw-medium mb-0 text-muted">Puma</p>
-                                                    <h6 class="fw-semibold mb-0 mt-1">$30<span
-                                                            class="text-decoration-line-through text-muted fw-normal ms-1 fs-13 d-inline-block">$49</span>
-                                                    </h6>
-                                                </div>
-                                                <a href="cart.html" class="fw-semibold">Creed Aventus Luxury Perfume</a>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-muted">Quantity : <span
-                                                            class="text-default fs-13 fw-medium">9 x
-                                                            $64</span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex rounded flex-nowrap order-qnt me-1"> <a
-                                                    href="javascript:void(0);"
-                                                    class="badge bg-white p-1 border text-muted fs-13 me-2 product-quantity-minus"><i
-                                                        class="ri-subtract-line"></i> </a> <input type="text"
-                                                    class="form-control form-control-cart border-0 text-center w-100"
-                                                    aria-label="quantity" id="product-qty3" value="4"> <a
-                                                    href="javascript:void(0);"
-                                                    class="badge bg-white p-1 border text-muted fs-13 me-2 product-quantity-plus"><i
-                                                        class="ri-add-line"></i> </a> </div>
-                                            <div class="d-flex gap-2">
-                                                <a href="wishlist.html"
-                                                class="btn btn-primary-light btn-sm btn-wave waves-effect waves-light border" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"><i class="ri-heart-line"></i></a>
-                                                <a href="javascript:void(0);"
-                                                    class="header-cart-remove dropdown-item-close btn btn-sm btn-icon btn-danger-light"><i
-                                                        class="ri-close-line fs-15"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-item">
-                                    <div class="cart-dropdown-item">
-                                        <div class="d-flex align-items-center  gap-3 mb-2">
-                                            <div class="lh-1">
-                                                <span class="avatar avatar-xl p-1 bg-warning-transparent">
-                                                    <img src="../assets/images/ecommerce/png/34.png" alt="img">
-                                                </span>
-                                            </div>
-                                            <div class="flex-fill">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="fs-11 fw-medium mb-0 text-muted">Puma</p>
-                                                    <h6 class="fw-semibold mb-0 mt-1">$70<span
-                                                            class="text-decoration-line-through text-muted fw-normal ms-1 fs-13 d-inline-block">$129</span>
-                                                    </h6>
-                                                </div>
-                                                <a href="cart.html" class="fw-semibold">Ethan Allen Wall Clock</a>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-muted">Quantity : <span
-                                                            class="text-default fs-13 fw-medium">7 x
-                                                            $230</span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex rounded flex-nowrap order-qnt me-1"> <a
-                                                    href="javascript:void(0);"
-                                                    class="badge bg-white p-1 border text-muted fs-13 me-2 product-quantity-minus"><i
-                                                        class="ri-subtract-line"></i> </a> <input type="text"
-                                                    class="form-control form-control-cart border-0 text-center w-100"
-                                                    aria-label="quantity" id="product-qty4" value="1"> <a
-                                                    href="javascript:void(0);"
-                                                    class="badge bg-white p-1 border text-muted fs-13 me-2 product-quantity-plus"><i
-                                                        class="ri-add-line"></i> </a> </div>
-                                            <div class="d-flex gap-2">
-                                                <a href="wishlist.html"
-                                                class="btn btn-primary-light btn-sm btn-wave waves-effect waves-light border" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"><i class="ri-heart-line"></i></a>
-                                                <a href="javascript:void(0);"
-                                                    class="header-cart-remove dropdown-item-close btn btn-sm btn-icon btn-danger-light"><i
-                                                        class="ri-close-line fs-15"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-item">
-                                    <div class="cart-dropdown-item">
-                                        <div class="d-flex align-items-center  gap-3 mb-2">
-                                            <div class="lh-1">
-                                                <span class="avatar avatar-xl p-1 bg-pink-transparent">
-                                                    <img src="../assets/images/ecommerce/png/31.png" alt="img">
-                                                </span>
-                                            </div>
-                                            <div class="flex-fill">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="fs-11 fw-medium mb-0 text-muted">Puma</p>
-                                                    <h6 class="fw-semibold mb-0 mt-1">$200<span
-                                                            class="text-decoration-line-through text-muted fw-normal ms-1 fs-13 d-inline-block">$249</span>
-                                                    </h6>
-                                                </div>
-                                                <a href="cart.html" class="fw-semibold">Louis Vuitton Handbag</a>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-muted">Quantity : <span
-                                                            class="text-default fs-13 fw-medium">5 x
-                                                            $52</span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex rounded flex-nowrap order-qnt me-1"> <a
-                                                    href="javascript:void(0);"
-                                                    class="badge bg-white p-1 border text-muted fs-13 me-2 product-quantity-minus"><i
-                                                        class="ri-subtract-line"></i> </a> <input type="text"
-                                                    class="form-control form-control-cart border-0 text-center w-100"
-                                                    aria-label="quantity" id="product-qty5" value="3"> <a
-                                                    href="javascript:void(0);"
-                                                    class="badge bg-white p-1 border text-muted fs-13 me-2 product-quantity-plus"><i
-                                                        class="ri-add-line"></i> </a> </div>
-                                            <div class="d-flex gap-2">
-                                                <a href="wishlist.html"
-                                                class="btn btn-primary-light btn-sm btn-wave waves-effect waves-light border" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist"><i class="ri-heart-line"></i></a>
-                                                <a href="javascript:void(0);"
-                                                    class="header-cart-remove dropdown-item-close btn btn-sm btn-icon btn-danger-light"><i
-                                                        class="ri-close-line fs-15"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="p-3 empty-header-item border-top">
-                                <div class="text-center d-grid">
-                                    <a href="checkout.html" class="text-primary text-decoration-underline">Proceed to checkout
-                                        <i class="ri-arrow-right-line"></i></a>
-                                </div>
-                            </div>
-                            <div class="p-5 empty-item d-none">
-                                <div class="text-center">
-                                    <span class="avatar avatar-xl avatar-rounded bg-primary-transparent">
-                                        <span class="avatar avatar-lg avatar-rounded bg-primary">
-                                            <i class="ri-shopping-cart-2-line fs-2"></i>
-                                        </span>
-                                    </span>
-                                    <h6 class="fw-semibold mb-1 mt-3">Your Cart is Empty</h6>
-                                    <span class="mb-3 fw-normal fs-13 d-block">Add some items to make it happy :)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End::main-header-dropdown -->
-                    </li>
-                    <!-- End::header-element -->
-
-                    <!-- Start::header-element -->
                     <li class="header-element notifications-dropdown d-xl-block d-none dropdown">
                         <!-- Start::header-link|dropdown-toggle -->
                         <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-toggle="dropdown"
                             data-bs-auto-close="outside" id="messageDropdown" aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon animate-bell" viewBox="0 0 256 256">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon animate-bell"
+                                viewBox="0 0 256 256">
                                 <rect width="256" height="256" fill="none" />
-                                <path d="M96,192a32,32,0,0,0,64,0" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="16" />
+                                <path d="M96,192a32,32,0,0,0,64,0" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
                                 <path d="M184,24a102.71,102.71,0,0,1,36.29,40" fill="none" stroke="currentColor"
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
                                 <path d="M35.71,64A102.71,102.71,0,0,1,72,24" fill="none" stroke="currentColor"
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
                                 <path
                                     d="M56,112a72,72,0,0,1,144,0c0,35.82,8.3,56.6,14.9,68A8,8,0,0,1,208,192H48a8,8,0,0,1-6.88-12C47.71,168.6,56,147.81,56,112Z"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="16" />
+                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="16" />
                             </svg>
                             <span class="header-icon-pulse bg-secondary rounded pulse pulse-secondary"></span>
                         </a>
                         <!-- End::header-link|dropdown-toggle -->
                         <!-- Start::main-header-dropdown -->
-                        <div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+                        <div class="main-header-dropdown dropdown-menu dropdown-menu-end"
+                            data-popper-placement="none">
                             <div class="p-3">
                                 <div class="d-flex align-items-center justify-content-between">
                                     <p class="mb-0 fs-16">Notifications</p>
@@ -1073,16 +848,20 @@
                             <div class="dropdown-divider"></div>
                             <div class="pb-0 px-3">
                                 <ul class="nav nav-tabs mb-0 tab-style-8 scaleX" role="tablist">
-                                    <li class="nav-item" role="presentation"> <button class="nav-link active" id="activity-tab"
-                                            data-bs-toggle="tab" data-bs-target="#activity-tab-pane" type="button" role="tab"
-                                            aria-controls="activity-tab-pane" aria-selected="true">Activity</button> </li>
-                                    <li class="nav-item" role="presentation"> <button class="nav-link" id="notes-tab"
-                                            data-bs-toggle="tab" data-bs-target="#notes-tab-pane" type="button" role="tab"
-                                            aria-controls="notes-tab-pane" aria-selected="false" tabindex="-1">Notes</button>
+                                    <li class="nav-item" role="presentation"> <button class="nav-link active"
+                                            id="activity-tab" data-bs-toggle="tab"
+                                            data-bs-target="#activity-tab-pane" type="button" role="tab"
+                                            aria-controls="activity-tab-pane" aria-selected="true">Activity</button>
                                     </li>
-                                    <li class="nav-item" role="presentation"> <button class="nav-link" id="alert-tab"
-                                            data-bs-toggle="tab" data-bs-target="#alert-tab-pane" type="button" role="tab"
-                                            aria-controls="alert-tab-pane" aria-selected="false" tabindex="-1">Alerts</button>
+                                    <li class="nav-item" role="presentation"> <button class="nav-link"
+                                            id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes-tab-pane"
+                                            type="button" role="tab" aria-controls="notes-tab-pane"
+                                            aria-selected="false" tabindex="-1">Notes</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation"> <button class="nav-link"
+                                            id="alert-tab" data-bs-toggle="tab" data-bs-target="#alert-tab-pane"
+                                            type="button" role="tab" aria-controls="alert-tab-pane"
+                                            aria-selected="false" tabindex="-1">Alerts</button>
                                     </li>
                                 </ul>
                             </div>
@@ -1095,15 +874,20 @@
                                             <div class="d-flex align-items-start">
                                                 <div class="pe-2 lh-1"> <span
                                                         class="avatar avatar-md avatar-rounded svg-white">
-                                                        <img src="../assets/images/faces/2.jpg" alt="img"> </span>
+                                                        <img src={{ asset('assets/images/faces/2.jpg') }}
+                                                            alt="img"> </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold">Way to go Jack Miller ! &#127881;</p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            Congratulations on snagging the Monthly Best Seller Gold Badge !</div>
+                                                        <p class="mb-0 fw-semibold">Way to go Jack Miller ! &#127881;
+                                                        </p>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            Congratulations on snagging the Monthly Best Seller Gold
+                                                            Badge !</div>
                                                         <span class="text-muted fs-12">2 Min
-                                                                Ago</span>
+                                                            Ago</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
                                                             class="min-w-fit-content text-muted dropdown-item-close1"><i
@@ -1116,15 +900,18 @@
                                             <div class="d-flex align-items-start">
                                                 <div class="pe-2 lh-1"> <span
                                                         class="avatar avatar-md bg-primary-transparent avatar-rounded svg-white">
-                                                       SM </span>
+                                                        SM </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
                                                         <p class="mb-0 fw-semibold">You’ve Got Mail!</p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            Natalie has sent you a new message. Click here to view it.</div>
-                                                            <span class="text-muted fs-12">5 Min
-                                                                Ago</span>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            Natalie has sent you a new message. Click here to view it.
+                                                        </div>
+                                                        <span class="text-muted fs-12">5 Min
+                                                            Ago</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
                                                             class="min-w-fit-content text-muted dropdown-item-close1"><i
@@ -1137,14 +924,19 @@
                                             <div class="d-flex align-items-start">
                                                 <div class="pe-2 lh-1"> <span
                                                         class="avatar avatar-md avatar-rounded svg-white">
-                                                        <img src="../assets/images/faces/6.jpg" alt="img"> </span>
+                                                        <img src={{ asset('assets/images/faces/6.jpg') }}
+                                                            alt="img"> </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold"> Application Approved By Team &#128640;.</p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            Congratulations! Your project application has been approved.</div>
-                                                            <span class="text-muted fs-12">Yesterday</span>
+                                                        <p class="mb-0 fw-semibold"> Application Approved By Team
+                                                            &#128640;.</p>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            Congratulations! Your project application has been approved.
+                                                        </div>
+                                                        <span class="text-muted fs-12">Yesterday</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
                                                             class="min-w-fit-content text-muted dropdown-item-close1"><i
@@ -1159,12 +951,15 @@
                                                         class="avatar avatar-md bg-secondary-transparent avatar-rounded svg-white">
                                                         TR </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
                                                         <p class="mb-0 fw-semibold">New Connection Request</p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            Peter has sent you a connection request, please check your connection requests.</div>
-                                                            <span class="text-muted fs-12">2 Days Ago</span>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            Peter has sent you a connection request, please check your
+                                                            connection requests.</div>
+                                                        <span class="text-muted fs-12">2 Days Ago</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
                                                             class="min-w-fit-content text-muted dropdown-item-close1"><i
@@ -1177,14 +972,18 @@
                                             <div class="d-flex align-items-start">
                                                 <div class="pe-2 lh-1"> <span
                                                         class="avatar avatar-md avatar-rounded svg-white">
-                                                        <img src="../assets/images/faces/14.jpg" alt="img"> </span>
+                                                        <img src={{ asset('assets/images/faces/14.jpg') }}
+                                                            alt="img"> </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold">Whoo! Your Order Is On the Way &#128666;.</p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
+                                                        <p class="mb-0 fw-semibold">Whoo! Your Order Is On the Way
+                                                            &#128666;.</p>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
                                                             Great news! Your order is now on its way to you.</div>
-                                                            <span class="text-muted fs-12">1 Hr Ago</span>
+                                                        <span class="text-muted fs-12">1 Hr Ago</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
                                                             class="min-w-fit-content text-muted dropdown-item-close1"><i
@@ -1204,18 +1003,22 @@
                                                         class="avatar avatar-md avatar-rounded bg-primary">
                                                         <i class="ri-file-text-line fs-16"></i> </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">This Month Notes
+                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">This
+                                                                Month Notes
                                                                 Prepared</a></p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            Your notes for this month are ready and available. Please review them at your convenience.</div>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            Your notes for this month are ready and available. Please
+                                                            review them at your convenience.</div>
                                                         <span class="fs-13 text-muted">2 min ago</span>
                                                     </div>
                                                     <div>
-                                                    <a href="javascript:void(0);"
-                                                        class="min-w-fit-content text-muted dropdown-item-close1"><i
-                                                            class="ri-close-line fs-5"></i></a>
+                                                        <a href="javascript:void(0);"
+                                                            class="min-w-fit-content text-muted dropdown-item-close1"><i
+                                                                class="ri-close-line fs-5"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1226,12 +1029,17 @@
                                                         class="avatar avatar-md avatar-rounded bg-secondary">
                                                         <i class="ri-box-3-line fs-16"></i></span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">Order <span
-                                                                    class="text-success">#54321</span> has been shipped.</a></p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            Order is on its way. You can track your shipment using the tracking number provided.</div>
+                                                        <p class="mb-0 fw-semibold"><a
+                                                                href="javascript:void(0);">Order <span
+                                                                    class="text-success">#54321</span> has been
+                                                                shipped.</a></p>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            Order is on its way. You can track your shipment using the
+                                                            tracking number provided.</div>
                                                         <span class="fs-13 text-muted">2 min ago</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
@@ -1247,12 +1055,16 @@
                                                         class="avatar avatar-md avatar-rounded bg-success">
                                                         <i class="ri-mail-open-line fs-16"></i> </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">A Email Will be
+                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">A
+                                                                Email Will be
                                                                 sent to customer.</a></p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            An email regarding your recent order will be sent to the customer shortly.</div>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            An email regarding your recent order will be sent to the
+                                                            customer shortly.</div>
                                                         <span class="fs-13 text-muted">10 Days ago</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
@@ -1264,15 +1076,21 @@
                                         </li>
                                         <li class="dropdown-item">
                                             <div class="d-flex align-items-start">
-                                                <div class="pe-2 lh-1"> <span class="avatar avatar-md avatar-rounded bg-info">
+                                                <div class="pe-2 lh-1"> <span
+                                                        class="avatar avatar-md avatar-rounded bg-info">
                                                         <i class="ri-bank-card-line fs-16"></i> </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">Payment Form
+                                                        <p class="mb-0 fw-semibold"><a
+                                                                href="javascript:void(0);">Payment Form
                                                                 Will be Activated.</a></p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                                    The payment form will be activated shortly. Please ensure that all necessary details are correctly filled out to proceed with the payment process.</div>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            The payment form will be activated shortly. Please ensure
+                                                            that all necessary details are correctly filled out to
+                                                            proceed with the payment process.</div>
                                                         <span class="fs-13 text-muted">Yesterday</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
@@ -1288,12 +1106,16 @@
                                                         class="avatar avatar-md avatar-rounded bg-warning">
                                                         <i class="ri-group-line fs-16"></i> </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">Meeting will be
+                                                        <p class="mb-0 fw-semibold"><a
+                                                                href="javascript:void(0);">Meeting will be
                                                                 held tomorrow</a></p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            This is a reminder that a meeting will be held tomorrow. </div>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            This is a reminder that a meeting will be held tomorrow.
+                                                        </div>
                                                         <span class="fs-13 text-muted">2 days ago</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
@@ -1314,12 +1136,16 @@
                                                         class="avatar avatar-md avatar-rounded bg-primary-transparent">
                                                         <i class="ri-mail-line fs-16"></i> </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">Mail Login with
+                                                        <p class="mb-0 fw-semibold"><a
+                                                                href="javascript:void(0);">Mail Login with
                                                                 Different Device</a></p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            Your email account has been accessed from a new device. If this was you, no action is needed. </div>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            Your email account has been accessed from a new device. If
+                                                            this was you, no action is needed. </div>
                                                         <span class="fs-13 text-muted">2 min ago</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
@@ -1335,12 +1161,17 @@
                                                         class="avatar avatar-md avatar-rounded bg-secondary-transparent">
                                                         <i class="ri-folder-warning-line fs-16"></i></span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">Your
+                                                        <p class="mb-0 fw-semibold"><a
+                                                                href="javascript:void(0);">Your
                                                                 Subscription was expaired.</a></p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            Your subscription has expired. Please renew your subscription to continue enjoying uninterrupted access to our services. </div>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            Your subscription has expired. Please renew your
+                                                            subscription to continue enjoying uninterrupted access to
+                                                            our services. </div>
                                                         <span class="fs-13 text-muted">15 min ago</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
@@ -1356,12 +1187,17 @@
                                                         class="avatar avatar-md avatar-rounded bg-success-transparent">
                                                         <i class="ri-database-2-line fs-16"></i> </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">Your storage
+                                                        <p class="mb-0 fw-semibold"><a
+                                                                href="javascript:void(0);">Your storage
                                                                 space is running low.</a></p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            Your storage space is running low. Please free up some space or upgrade your storage plan to avoid any interruptions. </div>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            Your storage space is running low. Please free up some space
+                                                            or upgrade your storage plan to avoid any interruptions.
+                                                        </div>
                                                         <span class="fs-13 text-muted">23 min ago</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
@@ -1377,12 +1213,16 @@
                                                         class="avatar avatar-md avatar-rounded bg-info-transparent">
                                                         <i class="ri-bank-card-line fs-16"></i> </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">Your changes
+                                                        <p class="mb-0 fw-semibold"><a
+                                                                href="javascript:void(0);">Your changes
                                                                 have been saved.</a></p>
-                                                       <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                        Your changes have been saved. If you need to make any more adjustments, feel free to do so. </div>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            Your changes have been saved. If you need to make any more
+                                                            adjustments, feel free to do so. </div>
                                                         <span class="fs-13 text-muted">Yesterday</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
@@ -1398,12 +1238,17 @@
                                                         class="avatar avatar-md avatar-rounded bg-warning-transparent">
                                                         <i class="ri-stack-line fs-16"></i> </span>
                                                 </div>
-                                                <div class="flex-grow-1 d-flex align-items-start justify-content-between">
+                                                <div
+                                                    class="flex-grow-1 d-flex align-items-start justify-content-between">
                                                     <div>
-                                                        <p class="mb-0 fw-semibold"><a href="javascript:void(0);">New updates are
+                                                        <p class="mb-0 fw-semibold"><a
+                                                                href="javascript:void(0);">New updates are
                                                                 available soon.</a></p>
-                                                        <div class="fw-normal fs-13 header-notification-text text-truncate">
-                                                            Exciting new updates are on the way! Stay tuned for enhancements and new features that will be available soon. </div>
+                                                        <div
+                                                            class="fw-normal fs-13 header-notification-text text-truncate">
+                                                            Exciting new updates are on the way! Stay tuned for
+                                                            enhancements and new features that will be available soon.
+                                                        </div>
                                                         <span class="fs-13 text-muted">2 days ago</span>
                                                     </div>
                                                     <div> <a href="javascript:void(0);"
@@ -1418,8 +1263,8 @@
                             </div>
                             <div class="p-3 empty-header-item1 border-top">
                                 <div class="d-grid text-center">
-                                    <a href="checkout.html" class="text-primary text-decoration-underline">View All<i
-                                            class="ri-arrow-right-line"></i></a>
+                                    <a href="checkout.html" class="text-primary text-decoration-underline">View
+                                        All<i class="ri-arrow-right-line"></i></a>
                                 </div>
                             </div>
                             <div class="p-5 empty-item1 d-none">
@@ -1442,26 +1287,28 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="full-screen-open header-link-icon"
                                 viewBox="0 0 256 256">
                                 <rect width="256" height="256" fill="none" />
-                                <polyline points="168 48 208 48 208 88" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="16" />
-                                <polyline points="88 208 48 208 48 168" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="16" />
+                                <polyline points="168 48 208 48 208 88" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+                                <polyline points="88 208 48 208 48 168" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
                                 <polyline points="208 168 208 208 168 208" fill="none" stroke="currentColor"
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                <polyline points="48 88 48 48 88 48" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="16" />
+                                <polyline points="48 88 48 48 88 48" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="full-screen-close header-link-icon d-none"
-                                viewBox="0 0 256 256">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="full-screen-close header-link-icon d-none" viewBox="0 0 256 256">
                                 <rect width="256" height="256" fill="none" />
-                                <polyline points="160 48 208 48 208 96" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="16" />
-                                <line x1="144" y1="112" x2="208" y2="48" fill="none" stroke="currentColor"
+                                <polyline points="160 48 208 48 208 96" fill="none" stroke="currentColor"
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
-                                <polyline points="96 208 48 208 48 160" fill="none" stroke="currentColor" stroke-linecap="round"
+                                <line x1="144" y1="112" x2="208" y2="48"
+                                    fill="none" stroke="currentColor" stroke-linecap="round"
                                     stroke-linejoin="round" stroke-width="16" />
-                                <line x1="112" y1="144" x2="48" y2="208" fill="none" stroke="currentColor"
+                                <polyline points="96 208 48 208 48 160" fill="none" stroke="currentColor"
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+                                <line x1="112" y1="144" x2="48" y2="208"
+                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="16" />
                             </svg>
                         </a>
                         <!-- End::header-link -->
@@ -1475,10 +1322,11 @@
                             data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                             <div class="d-flex align-items-center">
                                 <div class="me-xl-2 me-0">
-                                    <img src="../assets/images/faces/2.jpg" alt="img" class="avatar avatar-sm avatar-rounded">
+                                    <img src={{ asset('images/logo/wind-app.png') }} alt="img"
+                                        class="avatar avatar-sm avatar-rounded">
                                 </div>
                                 <div class="d-xl-block d-none lh-1">
-                                    <span class="fw-medium lh-1">Mr. Jack</span>
+                                    <span class="fw-medium lh-1"> {{ Auth::user()->name }}</span>
                                 </div>
                             </div>
                         </a>
@@ -1486,8 +1334,9 @@
                         <ul class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end"
                             aria-labelledby="mainHeaderProfile">
                             <li>
-                                <div class="py-2 px-3 text-center"> <span class="fw-semibold"> Mr.Jack Miller </span> <span
-                                        class="d-block fs-12 text-muted">UI/UX Designer</span> </div>
+                                <div class="py-2 px-3 text-center"> <span class="fw-semibold">
+                                        {{ Auth::user()->name }}</span> <span class="d-block fs-12 text-muted">UI/UX
+                                        Designer</span> </div>
                             </li>
                             <li><a class="dropdown-item d-flex align-items-center" href="profile.html"><i
                                         class="ti ti-user text-primary me-2 fs-16"></i>Profile</a>
@@ -1504,28 +1353,18 @@
                             <li><a class="dropdown-item d-flex align-items-center" href="chat.html"><i
                                         class="ti ti-headset text-warning me-2 fs-16"></i>Support</a>
                             </li>
-                            <li class="py-2 px-3"><a class="btn btn-primary btn-sm w-100" href="sign-up-basic.html">Log Out</a>
+                            <li class="py-2 px-3">
+                                <a class="btn btn-primary btn-sm w-100" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                    class="d-none">
+                                    @csrf
+                                </form>
                             </li>
                         </ul>
-                    </li>
-                    <!-- End::header-element -->
-
-                    <!-- Start::header-element -->
-                    <li class="header-element">
-                        <!-- Start::header-link|switcher-icon -->
-                        <a href="javascript:void(0);" class="header-link switcher-icon" data-bs-toggle="offcanvas"
-                            data-bs-target="#switcher-canvas">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon" viewBox="0 0 256 256">
-                                <rect width="256" height="256" fill="none" />
-                                <circle cx="128" cy="128" r="40" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="16" />
-                                <path
-                                    d="M41.43,178.09A99.14,99.14,0,0,1,31.36,153.8l16.78-21a81.59,81.59,0,0,1,0-9.64l-16.77-21a99.43,99.43,0,0,1,10.05-24.3l26.71-3a81,81,0,0,1,6.81-6.81l3-26.7A99.14,99.14,0,0,1,102.2,31.36l21,16.78a81.59,81.59,0,0,1,9.64,0l21-16.77a99.43,99.43,0,0,1,24.3,10.05l3,26.71a81,81,0,0,1,6.81,6.81l26.7,3a99.14,99.14,0,0,1,10.07,24.29l-16.78,21a81.59,81.59,0,0,1,0,9.64l16.77,21a99.43,99.43,0,0,1-10,24.3l-26.71,3a81,81,0,0,1-6.81,6.81l-3,26.7a99.14,99.14,0,0,1-24.29,10.07l-21-16.78a81.59,81.59,0,0,1-9.64,0l-21,16.77a99.43,99.43,0,0,1-24.3-10l-3-26.71a81,81,0,0,1-6.81-6.81Z"
-                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="16" />
-                            </svg>
-                        </a>
-                        <!-- End::header-link|switcher-icon -->
                     </li>
                     <!-- End::header-element -->
 
@@ -1543,10 +1382,10 @@
             <!-- Start::main-sidebar-header -->
             <div class="main-sidebar-header">
                 <a href="index.html" class="header-logo">
-                    <img src="../assets/images/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo">
-                    <img src="../assets/images/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark">
-                    <img src="../assets/images/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark">
-                    <img src="../assets/images/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo">
+                    <img src={{ asset('images/logo/logo-dark.png') }} alt="logo" class="desktop-logo">
+                    <img src={{ asset('images/logo/logo-light.png') }} alt="logo" class="toggle-dark">
+                    <img src={{ asset('images/logo/logo-light.png') }} alt="logo" class="desktop-dark">
+                    <img src={{ asset('images/logo/logo-dark.png') }} alt="logo" class="toggle-logo">
                 </a>
             </div>
             <!-- End::main-sidebar-header -->
@@ -1554,928 +1393,351 @@
             <!-- Start::main-sidebar -->
             <div class="main-sidebar" id="sidebar-scroll">
 
-                <!-- Start::nav -->
+                <!-- Sidebar -->
                 <nav class="main-menu-container nav nav-pills flex-column sub-open">
                     <div class="slide-left" id="slide-left">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"> <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path> </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                        </svg>
                     </div>
                     <ul class="main-menu">
-                        <!-- Start::slide__category -->
-                        <li class="slide__category"><span class="category-name">Dashboards</span></li>
-                        <!-- End::slide__category -->
+                        <!-- CRM -->
+                        <li class="slide__category"><span class="category-name">CRM</span></li>
+                        <!-- CRM  -->
 
-                        <!-- Start::slide -->
+                        <!-- CRM -->
                         <li class="slide has-sub">
                             <a href="javascript:void(0);" class="side-menu__item">
                                 <i class="ri-arrow-right-s-line side-menu__angle"></i>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M104,216V152h48v64h64V120a8,8,0,0,0-2.34-5.66l-80-80a8,8,0,0,0-11.32,0l-80,80A8,8,0,0,0,40,120v96Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon"
+                                    viewBox="0 0 256 256">
+                                    <rect width="256" height="256" fill="none" />
+                                    <path
+                                        d="M104,216V152h48v64h64V120a8,8,0,0,0-2.34-5.66l-80-80a8,8,0,0,0-11.32,0l-80,80A8,8,0,0,0,40,120v96Z"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                </svg>
                                 <span class="side-menu__label">Dashboards</span>
                             </a>
                             <ul class="slide-menu child1">
                                 <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Dashboards</a>
+                                    <a href={{ asset('admin') }}>Dashboards</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="index.html" class="side-menu__item">Sales</a>
+                                    <a href="full-calendar.html" class="side-menu__item">Doanh thu</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="index-1.html" class="side-menu__item">Analytics</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-2.html" class="side-menu__item">Ecommerce</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-3.html" class="side-menu__item">CRM</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-4.html" class="side-menu__item">Crypto</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-5.html" class="side-menu__item">NFT</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-6.html" class="side-menu__item">Projects</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-7.html" class="side-menu__item">Jobs</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-8.html" class="side-menu__item">HRM</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-9.html" class="side-menu__item">Courses</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-10.html" class="side-menu__item">Stocks</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-11.html" class="side-menu__item">Medical</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-12.html" class="side-menu__item">POS System</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-13.html" class="side-menu__item">Podcast</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-14.html" class="side-menu__item">School</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="index-15.html" class="side-menu__item">Social Media</a>
+                                    <a href="full-calendar.html" class="side-menu__item">Số liệu</a>
                                 </li>
                             </ul>
                         </li>
-                        <!-- End::slide -->
+                        <li class="slide has-sub">
+                            <a href="javascript:void(0);" class="side-menu__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <rect width="256" height="256" fill="none" />
+                                    <path
+                                        d="M12 11C14.7614 11 17 13.2386 17 16V22H15V16C15 14.4023 13.7511 13.0963 12.1763 13.0051L12 13C10.4023 13 9.09634 14.2489 9.00509 15.8237L9 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5.5 14C5.77885 14 6.05009 14.0326 6.3101 14.0942C6.14202 14.594 6.03873 15.122 6.00896 15.6693L6 16L6.0007 16.0856C5.88757 16.0456 5.76821 16.0187 5.64446 16.0069L5.5 16C4.7203 16 4.07955 16.5949 4.00687 17.3555L4 17.5V22H2V17.5C2 15.567 3.567 14 5.5 14ZM18.5 14C20.433 14 22 15.567 22 17.5V22H20V17.5C20 16.7203 19.4051 16.0796 18.6445 16.0069L18.5 16C18.3248 16 18.1566 16.03 18.0003 16.0852L18 16C18 15.3343 17.8916 14.694 17.6915 14.0956C17.9499 14.0326 18.2211 14 18.5 14ZM5.5 8C6.88071 8 8 9.11929 8 10.5C8 11.8807 6.88071 13 5.5 13C4.11929 13 3 11.8807 3 10.5C3 9.11929 4.11929 8 5.5 8ZM18.5 8C19.8807 8 21 9.11929 21 10.5C21 11.8807 19.8807 13 18.5 13C17.1193 13 16 11.8807 16 10.5C16 9.11929 17.1193 8 18.5 8ZM5.5 10C5.22386 10 5 10.2239 5 10.5C5 10.7761 5.22386 11 5.5 11C5.77614 11 6 10.7761 6 10.5C6 10.2239 5.77614 10 5.5 10ZM18.5 10C18.2239 10 18 10.2239 18 10.5C18 10.7761 18.2239 11 18.5 11C18.7761 11 19 10.7761 19 10.5C19 10.2239 18.7761 10 18.5 10ZM12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2ZM12 4C10.8954 4 10 4.89543 10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4Z">
+                                    </path>
+                                </svg>
+                                <span class="side-menu__label">Khách hàng</span>
+                                <i class="ri-arrow-right-s-line side-menu__angle"></i>
+                            </a>
+                            <ul class="slide-menu child1">
+
+                                <li class="slide">
+                                    <a href="full-calendar.html" class="side-menu__item">Danh sách</a>
+                                </li>
+                                <li class="slide">
+                                    <a href="full-calendar.html" class="side-menu__item">Lịch sử mua hàng</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- End CRM -->
+
+                        <!-- Nội dung -->
+                        <li class="slide__category"><span class="category-name">Nội dung</span></li>
+                        <!-- End Nội dung -->
+
+                        <!-- Start::slide -->
+                        <li class="slide has-sub">
+                            <a href="javascript:void(0);" class="side-menu__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect width="256" height="256" fill="none" />
+                                    <rect x="48" y="48" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="144" y="48" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="48" y="144" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="144" y="144" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <path
+                                        d="M9 6H15C15 4.34315 13.6569 3 12 3C10.3431 3 9 4.34315 9 6ZM7 6C7 3.23858 9.23858 1 12 1C14.7614 1 17 3.23858 17 6H20C20.5523 6 21 6.44772 21 7V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V7C3 6.44772 3.44772 6 4 6H7ZM5 8V20H19V8H5ZM9 10C9 11.6569 10.3431 13 12 13C13.6569 13 15 11.6569 15 10H17C17 12.7614 14.7614 15 12 15C9.23858 15 7 12.7614 7 10H9Z">
+                                    </path>
+                                </svg>
+                                <span class="side-menu__label">Bài viết</span>
+                                <i class="ri-arrow-right-s-line side-menu__angle"></i>
+                            </a>
+                            <ul class="slide-menu child1">
+                                <li class="slide side-menu__label1">
+                                    <a href="javascript:void(0)">Bài viết</a>
+                                </li>
+                                <li class="slide">
+                                    <a href="full-calendar.html" class="side-menu__item">Danh sách</a>
+                                </li>
+                                <li class="slide">
+                                    <a href="gallery.html" class="side-menu__item">Danh mục</a>
+                                </li>
+                                <li class="slide">
+                                    <a href="gallery.html" class="side-menu__item">Quản lý Tags</a>
+                                </li>
+                            </ul>
+                        </li>
 
                         <!-- Start::slide__category -->
-                        <li class="slide__category"><span class="category-name">Web Apps</span></li>
+                        <li class="slide__category"><span class="category-name">Vận hành</span></li>
                         <!-- End::slide__category -->
 
                         <!-- Start::slide -->
                         <li class="slide has-sub">
                             <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="48" y="48" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="144" y="48" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="48" y="144" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="144" y="144" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Apps</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect width="256" height="256" fill="none" />
+                                    <rect x="48" y="48" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="144" y="48" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="48" y="144" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="144" y="144" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <path
+                                        d="M9 6H15C15 4.34315 13.6569 3 12 3C10.3431 3 9 4.34315 9 6ZM7 6C7 3.23858 9.23858 1 12 1C14.7614 1 17 3.23858 17 6H20C20.5523 6 21 6.44772 21 7V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V7C3 6.44772 3.44772 6 4 6H7ZM5 8V20H19V8H5ZM9 10C9 11.6569 10.3431 13 12 13C13.6569 13 15 11.6569 15 10H17C17 12.7614 14.7614 15 12 15C9.23858 15 7 12.7614 7 10H9Z">
+                                    </path>
+                                </svg>
+                                <span class="side-menu__label">Sản phẩm</span>
                                 <i class="ri-arrow-right-s-line side-menu__angle"></i>
                             </a>
                             <ul class="slide-menu child1">
                                 <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Apps</a>
+                                    <a href="javascript:void(0)">Sản phẩm</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="full-calendar.html" class="side-menu__item">Full Calendar</a>
+                                    <a href="full-calendar.html" class="side-menu__item">Danh sách</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="gallery.html" class="side-menu__item">Gallery</a>
+                                    <a href="gallery.html" class="side-menu__item">Danh mục</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="sweet_alerts.html" class="side-menu__item">Sweet Alerts</a>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Ecommerce
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="add-product.html" class="side-menu__item">Add Product</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="cart.html" class="side-menu__item">Cart</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="checkout.html" class="side-menu__item">Checkout</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="edit-product.html" class="side-menu__item">Edit Product</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="order-details.html" class="side-menu__item">Order Details</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="orders.html" class="side-menu__item">Orders</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="products.html" class="side-menu__item">Products</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="product-details.html" class="side-menu__item">Products Details</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="products-list.html" class="side-menu__item">Products List</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="wishlist.html" class="side-menu__item">WishList</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Projects
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="projects-list.html" class="side-menu__item">Projects List</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="projects-overview.html" class="side-menu__item">Project Overview</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="projects-create.html" class="side-menu__item">Create Project</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Task
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="task-kanban-board.html" class="side-menu__item">Kanban Board</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="task-list-view.html" class="side-menu__item">List View</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="task-details.html" class="side-menu__item">Task Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Jobs
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="job-details.html" class="side-menu__item">Job Details</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="job-company-search.html" class="side-menu__item">Search Company</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="job-search.html" class="side-menu__item">Search Jobs</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="job-post.html" class="side-menu__item">Job Post</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="jobs-list.html" class="side-menu__item">Jobs List</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="job-candidate-search.html" class="side-menu__item">Search Candidate</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="job-candidate-details.html" class="side-menu__item">Candidate Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">NFT
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="nft-marketplace.html" class="side-menu__item">Market Place</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="nft-details.html" class="side-menu__item">NFT Details</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="nft-create.html" class="side-menu__item">Create NFT</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="nft-wallet-integration.html" class="side-menu__item">Wallet Integration</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="nft-live-auction.html" class="side-menu__item">Live Auction</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">CRM
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="crm-contacts.html" class="side-menu__item">Contacts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="crm-companies.html" class="side-menu__item">Companies</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="crm-deals.html" class="side-menu__item">Deals</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="crm-leads.html" class="side-menu__item">Leads</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Crypto
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="crypto-transactions.html" class="side-menu__item">Transactions</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="crypto-currency-exchange.html" class="side-menu__item">Currency Exchange</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="crypto-buy_sell.html" class="side-menu__item">Buy & Sell</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="crypto-marketcap.html" class="side-menu__item">Marketcap</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="crypto-wallet.html" class="side-menu__item">Wallet</a>
-                                        </li>
-                                    </ul>
+                                    <a href="gallery.html" class="side-menu__item">Biến thể</a>
                                 </li>
                             </ul>
                         </li>
                         <!-- End::slide -->
 
-                        <!-- Start::slide -->
+                        <!-- Kho hàng -->
                         <li class="slide has-sub">
                             <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="32 176 128 232 224 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="32 128 128 184 224 128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polygon points="32 80 128 136 224 80 128 24 32 80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Nested Menu</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <rect width="256" height="256" fill="none" />
+                                    <polyline points="32 176 128 232 224 176" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+                                    <polyline points="32 128 128 184 224 128" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+                                    <polygon points="32 80 128 136 224 80 128 24 32 80" fill="none"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="16" />
+                                    <path
+                                        d="M21 13.2422V20H22V22H2V20H3V13.2422C1.79401 12.435 1 11.0602 1 9.5C1 8.67286 1.22443 7.87621 1.63322 7.19746L4.3453 2.5C4.52393 2.1906 4.85406 2 5.21132 2H18.7887C19.1459 2 19.4761 2.1906 19.6547 2.5L22.3575 7.18172C22.7756 7.87621 23 8.67286 23 9.5C23 11.0602 22.206 12.435 21 13.2422ZM19 13.9725C18.8358 13.9907 18.669 14 18.5 14C17.2409 14 16.0789 13.478 15.25 12.6132C14.4211 13.478 13.2591 14 12 14C10.7409 14 9.5789 13.478 8.75 12.6132C7.9211 13.478 6.75911 14 5.5 14C5.331 14 5.16417 13.9907 5 13.9725V20H19V13.9725ZM5.78865 4L3.35598 8.21321C3.12409 8.59843 3 9.0389 3 9.5C3 10.8807 4.11929 12 5.5 12C6.53096 12 7.44467 11.3703 7.82179 10.4295C8.1574 9.59223 9.3426 9.59223 9.67821 10.4295C10.0553 11.3703 10.969 12 12 12C13.031 12 13.9447 11.3703 14.3218 10.4295C14.6574 9.59223 15.8426 9.59223 16.1782 10.4295C16.5553 11.3703 17.469 12 18.5 12C19.8807 12 21 10.8807 21 9.5C21 9.0389 20.8759 8.59843 20.6347 8.19746L18.2113 4H5.78865Z">
+                                    </path>
+                                </svg>
+                                <span class="side-menu__label">Kho hàng</span>
                                 <i class="ri-arrow-right-s-line side-menu__angle"></i>
                             </a>
                             <ul class="slide-menu child1">
                                 <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Nested Menu</a>
+                                    <a href="javascript:void(0)">Kho hàng</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="javascript:void(0);" class="side-menu__item">Nested-1</a>
+                                    <a href="javascript:void(0);" class="side-menu__item">Sản phẩm</a>
                                 </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Nested-2
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="javascript:void(0);" class="side-menu__item">Nested-2.1</a>
-                                        </li>
-                                        <li class="slide has-sub">
-                                            <a href="javascript:void(0);" class="side-menu__item">Nested-2.2
-                                                <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                            <ul class="slide-menu child3">
-                                                <li class="slide">
-                                                    <a href="javascript:void(0);" class="side-menu__item">Nested-2.2.1</a>
-                                                </li>
-                                                <li class="slide">
-                                                    <a href="javascript:void(0);" class="side-menu__item">Nested-2.2.2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                <li class="slide">
+                                    <a href="javascript:void(0);" class="side-menu__item">Lịch sử nhập xuất kho</a>
                                 </li>
+
                             </ul>
                         </li>
-                        <!-- End::slide -->
+                        <!-- End Kho hàng -->
 
-                        <!-- Start::slide__category -->
-                        <li class="slide__category"><span class="category-name">Crafted</span></li>
-                        <!-- End::slide__category -->
-
-                        <!-- Start::slide -->
+                        <!-- Order product -->
                         <li class="slide has-sub">
                             <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="40" y="88" width="176" height="128" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="128" cy="152" r="12"/><path d="M88,88V56a40,40,0,0,1,80,0V88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Authentication</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <rect width="256" height="256" fill="none" />
+                                    <polyline points="32 176 128 232 224 176" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+                                    <polyline points="32 128 128 184 224 128" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+                                    <polygon points="32 80 128 136 224 80 128 24 32 80" fill="none"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="16" />
+                                    <path
+                                        d="M20 2C20.5523 2 21 2.44772 21 3V6.757L19 8.757V4H5V20H19V17.242L21 15.242V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20ZM21.7782 8.80761L23.1924 10.2218L15.4142 18L13.9979 17.9979L14 16.5858L21.7782 8.80761ZM13 12V14H8V12H13ZM16 8V10H8V8H16Z">
+                                    </path>
+                                </svg>
+                                <span class="side-menu__label">Đơn hàng</span>
                                 <i class="ri-arrow-right-s-line side-menu__angle"></i>
                             </a>
                             <ul class="slide-menu child1">
                                 <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Authentication</a>
+                                    <a href="javascript:void(0)">Đơn hàng</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="coming-soon.html" class="side-menu__item">Coming Soon</a>
+                                    <a href="javascript:void(0);" class="side-menu__item">Danh sách</a>
                                 </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Create Password
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="create-password-basic.html" class="side-menu__item">Basic</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="create-password-cover.html" class="side-menu__item">Cover</a>
-                                        </li>
-                                    </ul>
-                                </li>      
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Lock Screen
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="lockscreen-basic.html" class="side-menu__item">Basic</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="lockscreen-cover.html" class="side-menu__item">Cover</a>
-                                        </li>
-                                    </ul>
-                                </li>     
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Reset Password
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="reset-password-basic.html" class="side-menu__item">Basic</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="reset-password-cover.html" class="side-menu__item">Cover</a>
-                                        </li>
-                                    </ul>
-                                </li>     
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Sign Up
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="sign-up-basic.html" class="side-menu__item">Basic</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="sign-up-cover.html" class="side-menu__item">Cover</a>
-                                        </li>
-                                    </ul>
-                                </li>  
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Sign In
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="sign-in-basic.html" class="side-menu__item">Basic</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="sign-in-cover.html" class="side-menu__item">Cover</a>
-                                        </li>
-                                    </ul>
-                                </li> 
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Two Step Verification
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="two-step-verification-basic.html" class="side-menu__item">Basic</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="two-step-verification-cover.html" class="side-menu__item">Cover</a>
-                                        </li>
-                                    </ul>
-                                </li> 
                                 <li class="slide">
-                                    <a href="under-maintenance.html" class="side-menu__item">Under Maintenance</a>
+                                    <a href="javascript:void(0);" class="side-menu__item">Quản lý hoàn trả</a>
                                 </li>
+
+                                <li class="slide">
+                                    <a href="javascript:void(0);" class="side-menu__item">Vận chuyển</a>
+                                </li>
+
                             </ul>
                         </li>
                         <!-- End::slide -->
 
-                        <!-- Start::slide -->
+                        <!-- NoteMenu::Setting -->
+                        <li class="slide__category"><span class="category-name">Hệ thống</span></li>
+                        <!-- NoteMenu::Setting -->
+                        <!-- Menu::Setting -->
                         <li class="slide has-sub">
                             <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="16"/><line x1="128" y1="136" x2="128" y2="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="128" cy="172" r="12"/></svg>
-                                <span class="side-menu__label">Error</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <rect width="256" height="256" fill="none" />
+                                    <rect x="48" y="48" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="144" y="48" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="48" y="144" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="144" y="144" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <path
+                                        d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5ZM4 5V19H20V7H11.5858L9.58579 5H4ZM8 18C8 15.7909 9.79086 14 12 14C14.2091 14 16 15.7909 16 18H8ZM12 13C10.6193 13 9.5 11.8807 9.5 10.5C9.5 9.11929 10.6193 8 12 8C13.3807 8 14.5 9.11929 14.5 10.5C14.5 11.8807 13.3807 13 12 13Z">
+                                    </path>
+                                </svg>
+                                <span class="side-menu__label">Nhân sự</span>
                                 <i class="ri-arrow-right-s-line side-menu__angle"></i>
                             </a>
                             <ul class="slide-menu child1">
                                 <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Error</a>
+                                    <a href="javascript:void(0)">Nhân sự</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="401-error.html" class="side-menu__item">401 - Error</a>
+                                    <a href="full-calendar.html" class="side-menu__item">Danh sách</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="404-error.html" class="side-menu__item">404 - Error</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="500-error.html" class="side-menu__item">500 - Error</a>
+                                    <a href="gallery.html" class="side-menu__item">Chức vụ</a>
                                 </li>
                             </ul>
                         </li>
-                        <!-- End::slide -->
 
-                        <!-- Start::slide -->
                         <li class="slide has-sub">
                             <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="32" y="48" width="192" height="160" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="80" y1="96" x2="176" y2="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="80" y1="128" x2="176" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="80" y1="160" x2="176" y2="160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Pages</span>
-                                <i class="ri-arrow-right-s-line side-menu__angle"></i>
-                            </a>
-                            <ul class="slide-menu child1 pages-ul">
-                                <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Pages</a>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Blog
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="blog.html" class="side-menu__item">Blog</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="blog-details.html" class="side-menu__item">Blog Details</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="blog-create.html" class="side-menu__item">Create Blog</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="slide">
-                                    <a href="chat.html" class="side-menu__item">Chat</a>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Email
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="mail.html" class="side-menu__item">Mail App</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="mail-settings.html" class="side-menu__item">Mail Settings</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="slide">
-                                    <a href="empty.html" class="side-menu__item">Empty</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="faq's.html" class="side-menu__item">FAQ's</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="file-manager.html" class="side-menu__item">File Manager</a>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Invoice
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="invoice-create.html" class="side-menu__item">Create Invoice</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="invoice-details.html" class="side-menu__item">Invoice Details</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="invoice-list.html" class="side-menu__item">Invoice List</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="slide">
-                                    <a href="pricing.html" class="side-menu__item">Pricing</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="profile.html" class="side-menu__item">Profile</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="profile-settings.html" class="side-menu__item">Profile Settings</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="landing.html" class="side-menu__item">Landing Page</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="reviews.html" class="side-menu__item">Reviews</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="search-results.html" class="side-menu__item">Search</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="team.html" class="side-menu__item">Team</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="terms_conditions.html" class="side-menu__item">Terms & Conditions</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="timeline.html" class="side-menu__item">Timeline</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="to-do-list.html" class="side-menu__item">To Do List</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- End::slide -->
 
-                        <!-- Start::slide__category -->
-                        <li class="slide__category"><span class="category-name">Modules</span></li>
-                        <!-- End::slide__category -->
-
-                        <!-- Start::slide -->
-                        <li class="slide has-sub">
-                            <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M32,216V56a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V216l-32-16-32,16-32-16L96,216,64,200Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="144" y1="112" x2="192" y2="112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="144" y1="144" x2="192" y2="144" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="64" y="96" width="48" height="64" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Forms</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <rect width="256" height="256" fill="none" />
+                                    <rect x="48" y="48" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="144" y="48" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="48" y="144" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="144" y="144" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <path
+                                        d="M3.33946 17.0002C2.90721 16.2515 2.58277 15.4702 2.36133 14.6741C3.3338 14.1779 3.99972 13.1668 3.99972 12.0002C3.99972 10.8345 3.3348 9.824 2.36353 9.32741C2.81025 7.71651 3.65857 6.21627 4.86474 4.99001C5.7807 5.58416 6.98935 5.65534 7.99972 5.072C9.01009 4.48866 9.55277 3.40635 9.4962 2.31604C11.1613 1.8846 12.8847 1.90004 14.5031 2.31862C14.4475 3.40806 14.9901 4.48912 15.9997 5.072C17.0101 5.65532 18.2187 5.58416 19.1346 4.99007C19.7133 5.57986 20.2277 6.25151 20.66 7.00021C21.0922 7.7489 21.4167 8.53025 21.6381 9.32628C20.6656 9.82247 19.9997 10.8336 19.9997 12.0002C19.9997 13.166 20.6646 14.1764 21.6359 14.673C21.1892 16.2839 20.3409 17.7841 19.1347 19.0104C18.2187 18.4163 17.0101 18.3451 15.9997 18.9284C14.9893 19.5117 14.4467 20.5941 14.5032 21.6844C12.8382 22.1158 11.1148 22.1004 9.49633 21.6818C9.55191 20.5923 9.00929 19.5113 7.99972 18.9284C6.98938 18.3451 5.78079 18.4162 4.86484 19.0103C4.28617 18.4205 3.77172 17.7489 3.33946 17.0002ZM8.99972 17.1964C10.0911 17.8265 10.8749 18.8227 11.2503 19.9659C11.7486 20.0133 12.2502 20.014 12.7486 19.9675C13.1238 18.8237 13.9078 17.8268 14.9997 17.1964C16.0916 16.5659 17.347 16.3855 18.5252 16.6324C18.8146 16.224 19.0648 15.7892 19.2729 15.334C18.4706 14.4373 17.9997 13.2604 17.9997 12.0002C17.9997 10.74 18.4706 9.5632 19.2729 8.6665C19.1688 8.4405 19.0538 8.21822 18.9279 8.00021C18.802 7.78219 18.667 7.57148 18.5233 7.36842C17.3457 7.61476 16.0911 7.43414 14.9997 6.80405C13.9083 6.17395 13.1246 5.17768 12.7491 4.03455C12.2509 3.98714 11.7492 3.98646 11.2509 4.03292C10.8756 5.17671 10.0916 6.17364 8.99972 6.80405C7.9078 7.43447 6.65245 7.61494 5.47428 7.36803C5.18485 7.77641 4.93463 8.21117 4.72656 8.66637C5.52881 9.56311 5.99972 10.74 5.99972 12.0002C5.99972 13.2604 5.52883 14.4372 4.72656 15.3339C4.83067 15.5599 4.94564 15.7822 5.07152 16.0002C5.19739 16.2182 5.3324 16.4289 5.47612 16.632C6.65377 16.3857 7.90838 16.5663 8.99972 17.1964ZM11.9997 15.0002C10.3429 15.0002 8.99972 13.6571 8.99972 12.0002C8.99972 10.3434 10.3429 9.00021 11.9997 9.00021C13.6566 9.00021 14.9997 10.3434 14.9997 12.0002C14.9997 13.6571 13.6566 15.0002 11.9997 15.0002ZM11.9997 13.0002C12.552 13.0002 12.9997 12.5525 12.9997 12.0002C12.9997 11.4479 12.552 11.0002 11.9997 11.0002C11.4474 11.0002 10.9997 11.4479 10.9997 12.0002C10.9997 12.5525 11.4474 13.0002 11.9997 13.0002Z">
+                                    </path>
+                                </svg>
+                                <span class="side-menu__label">Cài đặt</span>
                                 <i class="ri-arrow-right-s-line side-menu__angle"></i>
                             </a>
                             <ul class="slide-menu child1">
                                 <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Forms</a>
+                                    <a href="javascript:void(0)">Cài đặt</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="form_advanced.html" class="side-menu__item">Form Advanced</a>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Form Elements
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="form_inputs.html" class="side-menu__item">Inputs</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="form_check_radios.html" class="side-menu__item">Checks & Radios</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="form_input_group.html" class="side-menu__item">Input Group</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="form_select.html" class="side-menu__item">Form Select</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="form_range.html" class="side-menu__item">Range Slider</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="form_input_masks.html" class="side-menu__item">Input Masks</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="form_file_uploads.html" class="side-menu__item">File Uploads</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="form_dateTime_pickers.html" class="side-menu__item">Date,Time Picker</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="form_color_pickers.html" class="side-menu__item">Color Pickers</a>
-                                        </li>
-                                    </ul>
+                                    <a href="full-calendar.html" class="side-menu__item">Phân quyền</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="floating_labels.html" class="side-menu__item">Floating Labels</a>
+                                    <a href="gallery.html" class="side-menu__item">Vai trò</a>
                                 </li>
-                                <li class="slide">
-                                    <a href="form_layout.html" class="side-menu__item">Form Layouts</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="form_wizards.html" class="side-menu__item">Form Wizards</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="quill_editor.html" class="side-menu__item">Quill Editor</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="form_validation.html" class="side-menu__item">Validation</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="form_select2.html" class="side-menu__item">Select2</a>
-                                </li>
+                               
                             </ul>
                         </li>
-                        <!-- End::slide -->
 
-                        <!-- Start::slide -->
                         <li class="slide has-sub">
                             <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="24" y="56" width="208" height="40" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M216,96v96a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="104" y1="136" x2="152" y2="136" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Ui Elements</span>
-                                <i class="ri-arrow-right-s-line side-menu__angle"></i>
-                            </a>
-                            <ul class="slide-menu child1 mega-menu">
-                                <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Ui Elements</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="alerts.html" class="side-menu__item">Alerts</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="badge.html" class="side-menu__item">Badge</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="breadcrumb.html" class="side-menu__item">Breadcrumb</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="buttons.html" class="side-menu__item">Buttons</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="buttongroup.html" class="side-menu__item">Button Group</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="cards.html" class="side-menu__item">Cards</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="dropdowns.html" class="side-menu__item">Dropdowns</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="images_figures.html" class="side-menu__item">Images & Figures</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="links_interactions.html" class="side-menu__item">Links & Interactions</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="listgroup.html" class="side-menu__item">List Group</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="navs_tabs.html" class="side-menu__item">Navs & Tabs</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="object-fit.html" class="side-menu__item">Object Fit</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="pagination.html" class="side-menu__item">Pagination</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="popovers.html" class="side-menu__item">Popovers</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="progress.html" class="side-menu__item">Progress</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="spinners.html" class="side-menu__item">Spinners</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="toasts.html" class="side-menu__item">Toasts</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="tooltips.html" class="side-menu__item">Tooltips</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="typography.html" class="side-menu__item">Typography</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- End::slide -->
-
-                        <!-- Start::slide -->
-                        <li class="slide has-sub">
-                            <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M40.49,205.52,93,61.14a7.79,7.79,0,0,1,12.84-2.85l91.88,91.88A7.79,7.79,0,0,1,194.86,163L50.48,215.51A7.79,7.79,0,0,1,40.49,205.52Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M168,72s0-24,24-24,24-24,24-24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="144" y1="16" x2="144" y2="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="216" y1="112" x2="232" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="216" y1="80" x2="240" y2="72" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="78.09" y1="102.09" x2="153.91" y2="177.91" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="101.11" y1="197.11" x2="58.89" y2="154.89" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Advanced UI</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon"
+                                    viewBox="0 0 256 256">
+                                    <rect width="256" height="256" fill="none" />
+                                    <rect x="48" y="48" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="144" y="48" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="48" y="144" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                    <rect x="144" y="144" width="64" height="64" rx="8"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="16" />
+                                </svg>
+                                <span class="side-menu__label">Quản trị hệ thống</span>
                                 <i class="ri-arrow-right-s-line side-menu__angle"></i>
                             </a>
                             <ul class="slide-menu child1">
                                 <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Advanced Ui</a>
+                                    <a href="javascript:void(0)">Quản trị hệ thống</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="accordions_collpase.html" class="side-menu__item">Accordions & Collapse</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="carousel.html" class="side-menu__item">Carousel</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="draggable-cards.html" class="side-menu__item">Draggable Cards</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="media-player.html" class="side-menu__item">Media Player</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="modals_closes.html" class="side-menu__item">Modals & Closes</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="navbar.html" class="side-menu__item">Navbar</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="offcanvas.html" class="side-menu__item">Offcanvas</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="placeholders.html" class="side-menu__item">Placeholders</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="ratings.html" class="side-menu__item">Ratings</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="ribbons.html" class="side-menu__item">Ribbons</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="scrollspy.html" class="side-menu__item">Scrollspy</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="sortable-list.html" class="side-menu__item">Sortable JS</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="swiperjs.html" class="side-menu__item">Swiper JS</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="tour.html" class="side-menu__item">Tour</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="treeview.html" class="side-menu__item">Tree View</a>
+                                    <a href="gallery.html" class="side-menu__item">Danh sách trang</a>
                                 </li>
                             </ul>
                         </li>
-                        <!-- End::slide -->
-
-                        <!-- Start::slide -->
-                        <li class="slide has-sub">
-                            <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="96" r="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="128" cy="96" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="176 160 176 240 127.99 216 80 240 80 160.01" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Utilities</span>
-                                <i class="ri-arrow-right-s-line side-menu__angle"></i>
-                            </a>
-                            <ul class="slide-menu child1">
-                                <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Utilities</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="avatars.html" class="side-menu__item">Avatars</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="borders.html" class="side-menu__item">Borders</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="breakpoints.html" class="side-menu__item">Breakpoints</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="colors.html" class="side-menu__item">Colors</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="columns.html" class="side-menu__item">Columns</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="css_grid.html" class="side-menu__item">Css Grid</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="flex.html" class="side-menu__item">Flex</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="gutters.html" class="side-menu__item">Gutters</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="helpers.html" class="side-menu__item">Helpers</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="position.html" class="side-menu__item">Position</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="more.html" class="side-menu__item">Additional Content</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- End::slide -->
-
-                        <!-- Start::slide -->
-                        <li class="slide">
-                            <a href="widgets.html" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="32" y="80" width="192" height="48" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M208,128v72a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="128" y1="80" x2="128" y2="208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M176.79,31.21c9.34,9.34,9.89,25.06,0,33.82C159.88,80,128,80,128,80s0-31.88,15-48.79C151.73,21.32,167.45,21.87,176.79,31.21Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M79.21,31.21c-9.34,9.34-9.89,25.06,0,33.82C96.12,80,128,80,128,80s0-31.88-15-48.79C104.27,21.32,88.55,21.87,79.21,31.21Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Widgets</span>
-                            </a>
-                        </li>
-                        <!-- End::slide -->
-                
-                        <!-- Start::slide__category -->
-                        <li class="slide__category"><span class="category-name">Tools & Components</span></li>
-                        <!-- End::slide__category -->
-
-                        <!-- Start::slide -->
-                        <li class="slide has-sub">
-                            <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polygon points="176 80 112 112 80 176 144 144 176 80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Maps</span>
-                                <i class="ri-arrow-right-s-line side-menu__angle"></i>
-                            </a>
-                            <ul class="slide-menu child1">
-                                <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Maps</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="vector-maps.html" class="side-menu__item">Vector Maps</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="leaflet-maps.html" class="side-menu__item">Leaflet Maps</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="google-maps.html" class="side-menu__item">Google Maps</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- End::slide -->
-
-                        <!-- Start::slide -->
-                        <li class="slide">
-                            <a href="icons.html" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="48 139.59 48 216 208 216 208 139.59" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M54,40H202a8,8,0,0,1,7.69,5.8L224,96H32L46.34,45.8A8,8,0,0,1,54,40Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M96,96v16a32,32,0,0,1-64,0V96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M160,96v16a32,32,0,0,1-64,0V96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M224,96v16a32,32,0,0,1-64,0V96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Icons</span>
-                            </a>
-                        </li>
-                        <!-- End::slide -->
-
-                         <!-- Start::slide -->
-                        <li class="slide has-sub">
-                            <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="224 208 32 208 32 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="200 72 128 144 96 112 32 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="200 112 200 72 160 72" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Charts</span>
-                                <i class="ri-arrow-right-s-line side-menu__angle"></i>
-                            </a>
-                            <ul class="slide-menu child1">
-                                <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Charts</a>
-                                </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Apex Charts
-                                        <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="apex-line-charts.html" class="side-menu__item">Line Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-area-charts.html" class="side-menu__item">Area Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-column-charts.html" class="side-menu__item">Column Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-bar-charts.html" class="side-menu__item">Bar Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-mixed-charts.html" class="side-menu__item">Mixed Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-rangearea-charts.html" class="side-menu__item">Range Area Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-timeline-charts.html" class="side-menu__item">Timeline Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-funnel-charts.html" class="side-menu__item">Funnel Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-candlestick-charts.html" class="side-menu__item">CandleStick
-                                                Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-boxplot-charts.html" class="side-menu__item">Boxplot Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-bubble-charts.html" class="side-menu__item">Bubble Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-scatter-charts.html" class="side-menu__item">Scatter Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-heatmap-charts.html" class="side-menu__item">Heatmap Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-treemap-charts.html" class="side-menu__item">Treemap Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-pie-charts.html" class="side-menu__item">Pie Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-radialbar-charts.html" class="side-menu__item">Radialbar Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-radar-charts.html" class="side-menu__item">Radar Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-polararea-charts.html" class="side-menu__item">Polararea Charts</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="slide">
-                                    <a href="chartjs-charts.html" class="side-menu__item">Chartjs Charts</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="echarts.html" class="side-menu__item">Echart Charts</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- End::slide -->
-
-                        <!-- Start::slide -->
-                        <li class="slide has-sub">
-                            <a href="javascript:void(0);" class="side-menu__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="32" y1="104" x2="224" y2="104" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="32" y1="152" x2="224" y2="152" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="88" y1="104" x2="88" y2="200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
-                                <span class="side-menu__label">Tables</span>
-                                <i class="ri-arrow-right-s-line side-menu__angle"></i>
-                            </a>
-                            <ul class="slide-menu child1">
-                                <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Tables</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="tables.html" class="side-menu__item">Tables</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="grid-tables.html" class="side-menu__item">Grid JS Tables</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="data-tables.html" class="side-menu__item">Data Tables</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- End::slide -->
+                        <!-- Menu::Setting -->
 
                     </ul>
-                    <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"> <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path> </svg></div>
+                    <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg"
+                            fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                        </svg></div>
                 </nav>
-                <!-- End::nav -->
+                <!-- End Sidebar -->
 
             </div>
             <!-- End::main-sidebar -->
@@ -2488,29 +1750,18 @@
         <!-- End::app-content -->
 
 
-        <!-- Footer Start -->
-        <footer class="footer mt-auto py-3 bg-white text-center">
-            <div class="container">
-                <span class="text-muted"> Copyright © <span id="year"></span> <a
-                        href="javascript:void(0);" class="text-dark fw-medium">Zynix</a>.
-                    Designed with <span class="bi bi-heart-fill text-danger"></span> by <a href="https://wcsrm.com/" target="_blank">
-                        <span class="fw-medium text-primary">Spruko</span>
-                    </a> All
-                    rights
-                    reserved
-                </span>
-            </div>
-        </footer>
-        <!-- Footer End -->
-        <div class="modal fade" id="header-responsive-search" tabindex="-1" aria-labelledby="header-responsive-search" aria-hidden="true">
+        <!-- Footer-->
+        <div class="modal fade" id="header-responsive-search" tabindex="-1"
+            aria-labelledby="header-responsive-search" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="input-group">
-                            <input type="text" class="form-control border-end-0" placeholder="Search Anything ..."
-                                aria-label="Search Anything ..." aria-describedby="button-addon2">
-                            <button class="btn btn-primary" type="button"
-                                id="button-addon2"><i class="bi bi-search"></i></button>
+                            <input type="text" class="form-control border-end-0"
+                                placeholder="Search Anything ..." aria-label="Search Anything ..."
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-primary" type="button" id="button-addon2"><i
+                                    class="bi bi-search"></i></button>
                         </div>
                     </div>
                 </div>
@@ -2519,7 +1770,7 @@
 
     </div>
 
-     
+
     <!-- Scroll To Top -->
     <div class="scrollToTop">
         <span class="arrow lh-1"><i class="ti ti-arrow-big-up fs-16"></i></span>
@@ -2528,47 +1779,47 @@
     <!-- Scroll To Top -->
 
     <!-- Popper JS -->
-    <script src={{asset("assets/libs/@popperjs/core/umd/popper.min.js")}}></script>
+    <script src={{ asset('assets/libs/@popperjs/core/umd/popper.min.js') }}></script>
 
     <!-- Bootstrap JS -->
-    <script src={{asset("assets/libs/bootstrap/js/bootstrap.bundle.min.js")}}></script>
+    <script src={{ asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}></script>
 
     <!-- Defaultmenu JS -->
-    <script src={{asset("assets/js/defaultmenu.min.js")}}></script>
+    <script src={{ asset('assets/js/defaultmenu.min.js') }}></script>
 
     <!-- Node Waves JS-->
-    <script src={{asset("assets/libs/node-waves/waves.min.js")}}></script>
+    <script src={{ asset('assets/libs/node-waves/waves.min.js') }}></script>
 
     <!-- Sticky JS -->
-    <script src={{asset("assets/js/sticky.js")}}></script>
+    <script src={{ asset('assets/js/sticky.js') }}></script>
 
     <!-- Simplebar JS -->
-    <script src={{asset("assets/libs/simplebar/simplebar.min.js")}}></script>
-    <script src={{asset("assets/js/simplebar.js")}}></script>
+    <script src={{ asset('assets/libs/simplebar/simplebar.min.js') }}></script>
+    <script src={{ asset('assets/js/simplebar.js') }}></script>
 
     <!-- Auto Complete JS -->
-    <script src={{asset("assets/libs/@tarekraafat/autocomplete.js/autoComplete.min.js")}}></script>
+    <script src={{ asset('assets/libs/@tarekraafat/autocomplete.js/autoComplete.min.js') }}></script>
 
     <!-- Color Picker JS -->
-    <script src={{asset("assets/libs/@simonwep/pickr/pickr.es5.min.js")}}></script>
+    <script src={{ asset('assets/libs/@simonwep/pickr/pickr.es5.min.js') }}></script>
 
     <!-- Date & Time Picker JS -->
-    <script src={{asset("assets/libs/flatpickr/flatpickr.min.js")}}></script>
+    <script src={{ asset('assets/libs/flatpickr/flatpickr.min.js') }}></script>
 
 
     <!-- Apex Charts JS -->
-    <script src={{asset("assets/libs/apexcharts/apexcharts.min.js")}}></script>
+    <script src={{ asset('assets/libs/apexcharts/apexcharts.min.js') }}></script>
 
-    <!-- Analytics Dashboard --> 
-    <script src={{asset("assets/js/analytics-dashboard.js")}}></script>
+    <!-- Sales Dashboard -->
+    <script src={{ asset('assets/js/sales-dashboard.js') }}></script>
 
     <!-- Custom JS -->
-    <script src={{asset("assets/js/custom.js")}}></script>
- 
-    
+    <script src={{ asset('assets/js/custom.js') }}></script>
+
+
     <!-- Custom-Switcher JS -->
-    <script src={{asset("assets/js/custom-switcher.min.js")}}></script>
-    
+    <script src={{ asset('assets/js/custom-switcher.min.js') }}></script>
+
 </body>
 
-</html> 
+</html>

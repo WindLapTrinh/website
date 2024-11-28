@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet"
 
     <link href={{ asset('css/bootstrap/bootstrap-theme.min.css') }} rel="stylesheet" type="text/css" />
     <link href={{ asset('css/bootstrap/bootstrap.min.css') }} rel="stylesheet" type="text/css" />
@@ -35,8 +34,8 @@
     <script src={{ asset('js/bootstrap/bootstrap.min.js') }} type="text/javascript"></script>
     <script src={{ asset('js/carousel/owl.carousel.js') }} type="text/javascript"></script>
     <script src={{ asset('js/main.js') }} type="text/javascript"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
-</head>
+    <script src={{ asset('js/template/main.js') }} type="text/javascript"></script>
+</head></head>
 
 <body>
     <div id="site">

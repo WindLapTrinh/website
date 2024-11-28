@@ -1,6 +1,3 @@
-import flatpickr from "flatpickr";
-import { Vietnamese } from "flatpickr/dist/l10n/vi.js";
-
 $(document).ready(function () {
 //  SLIDER
     var slider = $('#slider-wp .section-detail');

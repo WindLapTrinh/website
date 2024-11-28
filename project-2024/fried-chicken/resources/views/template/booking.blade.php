@@ -122,7 +122,6 @@
         <!-- Ngôn ngữ tiếng Việt -->
         <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/vi.js"></script>
 
-
         <script>
 
             document.addEventListener("DOMContentLoaded", function() {
@@ -144,6 +143,5 @@
                 });
             });
         </script>
-
     </div>
 @endsection

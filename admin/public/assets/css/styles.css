@@ -3964,13 +3964,13 @@ typography
   border-color: var(--primary-color);
 }
 .btn.btn-secondary-light {
-  background-color: rgba(var(--secondary-rgb), 0.15);
-  color: rgb(var(--secondary-rgb));
+  background-color: rgba(var(--primary-rgb), 0.15);
+  color: rgb(var(--primary-rgb));
 }
 .btn.btn-secondary-light:hover, .btn.btn-secondary-light:focus, .btn.btn-secondary-light:active {
-  background-color: rgb(var(--secondary-rgb));
+  background-color: rgb(var(--primary-rgb));
   color: #fff;
-  border-color: rgb(var(--secondary-rgb));
+  border-color: rgb(var(--primary-rgb));
 }
 .btn.btn-warning-light {
   background-color: rgba(var(--warning-rgb), 0.15);

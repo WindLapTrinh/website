@@ -20,6 +20,7 @@ class UserSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'info.windlaptrinh@gmail.com',
             'password' => Hash::make('Wind@2024'), 
+            'position_id' => 1
         ]);
     }
 }

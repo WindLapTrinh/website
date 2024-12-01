@@ -1336,9 +1336,10 @@
                         <ul class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end"
                             aria-labelledby="mainHeaderProfile">
                             <li>
-                                <div class="py-2 px-3 text-center"> <span class="fw-semibold">
-                                        {{ Auth::user()->name }}</span> <span class="d-block fs-12 text-muted">UI/UX
-                                        Designer</span> </div>
+                                <div class="py-2 px-3 text-center"> 
+                                    <span class="fw-semibold">{{ Auth::user()->name }}</span> 
+                                    <span class="d-block fs-12 text-muted"> {{ Auth::user()->position->name ?? 'Chưa có chức vụ' }}</span> 
+                                </div>
                             </li>
                             <li><a class="dropdown-item d-flex align-items-center" href="profile.html"><i
                                         class="ti ti-user text-primary me-2 fs-16"></i>Profile</a>

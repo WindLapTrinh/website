@@ -22,6 +22,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'position_id'
     ];
 
     /**
@@ -43,9 +44,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function roles(){
-        return $this->belongsToMany(Role::class, 'user_role'); 
+    public function position(){
+        return $this->belongsTo(Position::class, 'position_id', 'id');
     }
+
+    // public function roles(){
+    //     return $this->belongsToMany(Role::class, 'user_role'); 
+    // }
     //func phân quyền
     public function hasPermission($permission){
         foreach($this->roles as $role){

@@ -8,24 +8,14 @@
             <!-- Page Header -->
             <div class="my-4 page-header-breadcrumb d-flex align-items-center justify-content-between flex-wrap gap-2">
                 <div>
-                    <h1 class="page-title fw-medium fs-18 mb-2">Grid Js</h1>
-                    <div class="">
-                        <nav>
-                            <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Tables</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Grid Js</li>
-                            </ol>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcrumb-style2 mb-0">
+                            <li class="breadcrumb-item"><a href="javascript:void(0);"><i class="ti ti-home-2 me-1 fs-15"></i>Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Services</li>
+                        </ol>
                         </nav>
-                    </div>
                 </div>
-                <div class="btn-list">
-                    <button class="btn btn-primary-light btn-wave me-2">
-                        <i class="bx bx-crown align-middle"></i> Plan Upgrade
-                    </button>
-                    <button class="btn btn-secondary-light btn-wave me-0">
-                        <i class="ri-upload-cloud-line align-middle"></i> Export Report
-                    </button>
-                </div>
+                
             </div>
             <!-- Page Header Close -->
 
@@ -42,7 +32,7 @@
                                     data-bs-target="#create-task"><i class="ri-add-line fw-medium align-middle me-1"></i>
                                     Create Task</button>
                                 <!-- Start::add task modal -->
-                                <div class="modal fade" id="create-task" tabindex="-1" aria-hidden="true">
+                                <div class="modal modal-lg fade" id="create-task" tabindex="-1" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -128,9 +118,10 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table text-nowrap table-bordered border-primary">
+                                <table class="table text-nowrap table-bordered border-primary table-checkall">
                                     <thead>
                                         <tr>
+                                            <th scope="col">#</th>
                                             <th scope="col">Order</th>
                                             <th scope="col">Date</th>
                                             <th scope="col">Customer</th>
@@ -139,6 +130,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td>1</td>
                                             <th scope="row">
                                                 #0007
                                             </th>
@@ -152,7 +144,7 @@
                                                     </span>Mayor Kelly
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="dropdown ms-2">
                                                     <button
                                                         class="btn btn-icon btn-secondary-light btn-sm btn-wave waves-light"
@@ -171,6 +163,7 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>2</td>
                                             <th scope="row">
                                                 #0008
                                             </th>
@@ -184,7 +177,7 @@
                                                     </span>Wicky Kross
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="dropdown ms-2">
                                                     <button
                                                         class="btn btn-icon btn-secondary-light btn-sm btn-wave waves-light"
@@ -203,6 +196,7 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>3</td>
                                             <th scope="row">
                                                 #0009
                                             </th>
@@ -216,7 +210,7 @@
                                                     </span>Julia Cam
                                                 </div>
                                             </td>
-                                            <td>
+                                            <td class="text-center">
                                                 <div class="dropdown ms-2">
                                                     <button
                                                         class="btn btn-icon btn-secondary-light btn-sm btn-wave waves-light"

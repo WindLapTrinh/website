@@ -1405,6 +1405,7 @@
                         </svg>
                     </div>
                     <ul class="main-menu">
+                        
                         <!-- CRM -->
                         <li class="slide__category"><span class="category-name">CRM</span></li>
                         <!-- CRM  -->
@@ -1448,7 +1449,9 @@
                                 <i class="ri-arrow-right-s-line side-menu__angle"></i>
                             </a>
                             <ul class="slide-menu child1">
-
+                                <li class="slide side-menu__label1">
+                                    <a href="javascript:void(0)">Khách hàng</a>
+                                </li>
                                 <li class="slide">
                                     <a href={{ route('customer.list') }} class="side-menu__item">Danh sách</a>
                                 </li>
@@ -1695,7 +1698,7 @@
                                     <a href="javascript:void(0)">Cài đặt</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="full-calendar.html" class="side-menu__item">Phân quyền</a>
+                                    <a href={{route('permission.list')}} class="side-menu__item">Phân quyền</a>
                                 </li>
                                 <li class="slide">
                                     <a href="gallery.html" class="side-menu__item">Vai trò</a>
@@ -1831,16 +1834,13 @@
     <!-- Date & Time Picker JS -->
     <script src={{ asset('assets/libs/flatpickr/flatpickr.min.js') }}></script>
 
-    <!-- Custom JS -->
-    <script src={{ asset('assets/js/custom.js') }}></script>
-
     <!-- Custom-Switcher JS -->
     <script src={{ asset('assets/js/custom-switcher.min.js') }}></script>
 
     <!-- Flat Picker JS -->
     <script src={{ asset('assets/libs/flatpickr/flatpickr.min.js') }}></script>
 
-    <!-- Custom JS -->
+    <!-- Grid JS -->
     <script src={{ asset('assets/js/grid.js') }}></script>
 
 </body>

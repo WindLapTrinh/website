@@ -54,8 +54,8 @@ Route::middleware('auth')->group(function(){
     // end admin user 
 
     // admin permsision 
-    // Route::get("admin/permission/add", [PermissionController::class, 'add'])->name('permission.add');
-    // Route::post("admin/permission/store", [PermissionController::class, 'store'])->name('permission.store');
+    Route::get("admin/permission/list", [PermissionController::class, 'list'])->name('permission.list');
+    Route::post("admin/permission/add", [PermissionController::class, 'add'])->name('permission.add');
     // Route::get("admin/permission/edit/{id}", [PermissionController::class, "edit"])->name("permission.edit");
     // Route::post("admin/permission/update/{id}", [PermissionController::class, "update"])->name("permission.update");
     // Route::get("admin/permission/delete/{id}", [PermissionController::class, "delete"])->name("permission.delete");

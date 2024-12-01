@@ -24,7 +24,7 @@
         <!-- End::page-header -->
 
         <!-- Start:: row-1 -->
-        <div class="row">
+        <div class="row"> 
             <div class="col-xxl-9">
                 <div class="row">
                     <div class="col-xl-3">

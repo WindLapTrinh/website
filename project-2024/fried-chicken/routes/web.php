@@ -71,7 +71,7 @@ Route::middleware('auth')->group(function () {
     Route::post("admin/permission/update/{id}", [PermissionController::class, "update"])->name("permission.update");
     Route::get("admin/permission/delete/{id}", [PermissionController::class, "delete"])->name("permission.delete");
 
-    //admin role
+    //admin role 
     Route::get("admin/role/list", [RoleController::class, "getList"])->name("role.list")->can('role.list');
     Route::get("admin/role/add", [RoleController::class, "add"])->name("role.add")->can('role.add');
     Route::post("admin/role/store", [RoleController::class, "store"])->name("role.store")->can('role.add');

@@ -94,7 +94,7 @@ typography
   --primary08: rgba(var(--primary-rgb), 0.8);
   --primary09: rgba(var(--primary-rgb), 0.9);
   --primary005: rgba(var(--primary-rgb), 0.05);
-  --default-font-family: "Quicksand", sans-serif;
+  --default-font-family: "Roboto", sans-serif;
   --default-font-weight: 500;
   --default-text-color: #222f36;
   --default-border: #f3f2f9;
@@ -16769,6 +16769,7 @@ table.table-bordered.dataTable td:last-child,
 table.table-bordered.dataTable td:last-child {
   border-inline-end-width: 1px !important;
 }
+
 div.dataTables_wrapper div.dataTables_filter#scroll-vertical_filter input {
   margin-right: 0.2em;
 }
@@ -16815,6 +16816,7 @@ table.dataTable > tbody > tr.selected > * {
   color: var(--default-text-color) !important;
   box-shadow: none !important;
 }
+
 @media (min-width: 768px) {
   .data-table-btn {
     position: absolute;

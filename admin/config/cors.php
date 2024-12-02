@@ -1,34 +1,22 @@
 <?php
 
 return [
+    'paths' => ['api/*', 'sanctum/csrf-cookie'], // Đường dẫn API cần áp dụng CORS
 
-    /*
-    |--------------------------------------------------------------------------
-    | Cross-Origin Resource Sharing (CORS) Configuration
-    |--------------------------------------------------------------------------
-    |
-    | Here you may configure your settings for cross-origin resource sharing
-    | or "CORS". This determines what cross-origin operations may execute
-    | in web browsers. You are free to adjust these settings as needed.
-    |
-    | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-    |
-    */
+    'allowed_methods' => ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE'], // Thêm các phương thức bạn cần
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
-
-    'allowed_methods' => ['*'],
-
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['*'], // Các domain được phép (có thể là '*', hoặc chỉ domain Zalo Mini App)
 
     'allowed_origins_patterns' => [],
 
-    'allowed_headers' => ['*'],
+    'allowed_headers' => [
+        'DNT', 'User-Agent', 'X-Requested-With', 'If-Modified-Since', 
+        'Cache-Control', 'Content-Type', 'Range',
+    ], // Các header được phép gửi trong request
 
-    'exposed_headers' => [],
+    'exposed_headers' => ['Content-Length', 'Content-Range'], // Các header được trả về cho client
 
     'max_age' => 0,
 
-    'supports_credentials' => false,
-
+    'supports_credentials' => false, // Có hỗ trợ cookie không
 ];

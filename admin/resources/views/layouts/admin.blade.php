@@ -14,7 +14,6 @@
     <meta name="keywords"
         content="bootstrap template, admin panel bootstrap, bootstrap dashboard, admin, admin dashboard template, dashboard template, html css templates, dashboard, template dashboard,  bootstrap dashboard template, dashboard html css, bootstrap admin dashboard,  bootstrap admin, dashboard template, bootstrap5 admin template">
 
-
     <!-- Favicon -->
     <link rel="icon" href={{ asset('assets/images/brand-logos/favicon.ico') }} type="image/x-icon">
 
@@ -51,8 +50,6 @@
 
     <!-- Auto Complete CSS -->
     <link rel="stylesheet" href={{ asset('assets/libs/@tarekraafat/autocomplete.js/css/autoComplete.css') }}>
-
-    <link rel="stylesheet" href={{ asset('assets/libs/gridjs/theme/mermaid.min.css') }}>
 
 
 </head>
@@ -877,7 +874,8 @@
                                                 <div class="pe-2 lh-1"> <span
                                                         class="avatar avatar-md avatar-rounded svg-white">
                                                         <img src={{ asset('assets/images/faces/2.jpg') }}
-                                                            alt="img"> </span>
+                                                            alt="img">
+                                                    </span>
                                                 </div>
                                                 <div
                                                     class="flex-grow-1 d-flex align-items-start justify-content-between">
@@ -927,7 +925,8 @@
                                                 <div class="pe-2 lh-1"> <span
                                                         class="avatar avatar-md avatar-rounded svg-white">
                                                         <img src={{ asset('assets/images/faces/6.jpg') }}
-                                                            alt="img"> </span>
+                                                            alt="img">
+                                                    </span>
                                                 </div>
                                                 <div
                                                     class="flex-grow-1 d-flex align-items-start justify-content-between">
@@ -975,7 +974,8 @@
                                                 <div class="pe-2 lh-1"> <span
                                                         class="avatar avatar-md avatar-rounded svg-white">
                                                         <img src={{ asset('assets/images/faces/14.jpg') }}
-                                                            alt="img"> </span>
+                                                            alt="img">
+                                                    </span>
                                                 </div>
                                                 <div
                                                     class="flex-grow-1 d-flex align-items-start justify-content-between">
@@ -1336,9 +1336,10 @@
                         <ul class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end"
                             aria-labelledby="mainHeaderProfile">
                             <li>
-                                <div class="py-2 px-3 text-center"> 
-                                    <span class="fw-semibold">{{ Auth::user()->name }}</span> 
-                                    <span class="d-block fs-12 text-muted"> {{ Auth::user()->position->name ?? 'Chưa có chức vụ' }}</span> 
+                                <div class="py-2 px-3 text-center">
+                                    <span class="fw-semibold">{{ Auth::user()->name }}</span>
+                                    <span class="d-block fs-12 text-muted">
+                                        {{ Auth::user()->position->name ?? 'Chưa có chức vụ' }}</span>
                                 </div>
                             </li>
                             <li><a class="dropdown-item d-flex align-items-center" href="profile.html"><i
@@ -1372,7 +1373,6 @@
                     <!-- End::header-element -->
 
                 </ul>
-                <!-- End::header-content-right -->
 
             </div>
             <!-- End::main-header-container -->
@@ -1405,7 +1405,7 @@
                         </svg>
                     </div>
                     <ul class="main-menu">
-                        
+
                         <!-- CRM -->
                         <li class="slide__category"><span class="category-name">CRM</span></li>
                         <!-- CRM  -->
@@ -1453,7 +1453,7 @@
                                     <a href="javascript:void(0)">Khách hàng</a>
                                 </li>
                                 <li class="slide">
-                                    <a href={{ route('customer.list') }} class="side-menu__item">Danh sách</a>
+                                    <a href={{ url('admin/customer/list') }} class="side-menu__item">Danh sách</a>
                                 </li>
                                 <li class="slide">
                                     <a href="full-calendar.html" class="side-menu__item">Lịch sử mua hàng</a>
@@ -1698,7 +1698,7 @@
                                     <a href="javascript:void(0)">Cài đặt</a>
                                 </li>
                                 <li class="slide">
-                                    <a href={{route('permission.list')}} class="side-menu__item">Phân quyền</a>
+                                    <a href={{ route('permission.list') }} class="side-menu__item">Phân quyền</a>
                                 </li>
                                 <li class="slide">
                                     <a href="gallery.html" class="side-menu__item">Vai trò</a>
@@ -1750,6 +1750,7 @@
             </div>
             <!-- End::main-sidebar -->
 
+
         </aside>
         <!-- End::app-sidebar -->
 
@@ -1758,7 +1759,7 @@
         <!-- End::app-content -->
 
 
-        <!-- Footer-->
+        <!-- Footer Start -->
         <footer class="footer mt-auto py-3 bg-white text-center">
             <div class="container">
                 <span class="text-muted"> Copyright © <span id="year"></span> <a href="javascript:void(0);"
@@ -1772,6 +1773,7 @@
                 </span>
             </div>
         </footer>
+        <!-- Footer End -->
         <div class="modal fade" id="header-responsive-search" tabindex="-1"
             aria-labelledby="header-responsive-search" aria-hidden="true">
             <div class="modal-dialog">
@@ -1791,8 +1793,6 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <!-- Scroll To Top -->
     <div class="scrollToTop">
@@ -1826,22 +1826,22 @@
     <!-- Color Picker JS -->
     <script src={{ asset('assets/libs/@simonwep/pickr/pickr.es5.min.js') }}></script>
 
+    <!-- Date & Time Picker JS -->
+    <script src={{ asset('assets/libs/flatpickr/flatpickr.min.js') }}></script>
+
+
     <!-- Apex Charts JS -->
     <script src={{ asset('assets/libs/apexcharts/apexcharts.min.js') }}></script>
 
     <!-- Sales Dashboard -->
     <script src={{ asset('assets/js/sales-dashboard.js') }}></script>
-    <!-- Date & Time Picker JS -->
-    <script src={{ asset('assets/libs/flatpickr/flatpickr.min.js') }}></script>
+
+    <!-- Custom JS -->
+    <script src={{ asset('assets/js/custom.js') }}></script>
+
 
     <!-- Custom-Switcher JS -->
     <script src={{ asset('assets/js/custom-switcher.min.js') }}></script>
-
-    <!-- Flat Picker JS -->
-    <script src={{ asset('assets/libs/flatpickr/flatpickr.min.js') }}></script>
-
-    <!-- Grid JS -->
-    <script src={{ asset('assets/js/grid.js') }}></script>
 
 </body>
 

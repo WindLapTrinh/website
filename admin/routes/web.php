@@ -71,7 +71,6 @@ Route::middleware('auth')->group(function(){
     //admin customer
     Route::get("admin/customer/list", [CustomerController::class, "list"])->name("customer.list");
 
-
 });
 
 

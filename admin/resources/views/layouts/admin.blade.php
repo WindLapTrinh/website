@@ -564,14 +564,13 @@
                     <div class="header-element">
                         <div class="horizontal-logo">
                             <a href="index.html" class="header-logo">
-                                <img src={{ asset('assets/images/brand-logos/desktop-logo.png') }} alt="logo"
+                                <img src={{ asset('images/logo/logo-dark.png') }} alt="logo"
                                     class="desktop-logo">
-                                <img src={{ asset('assets/images/brand-logos/toggle-logo.png') }} alt="logo"
-                                    class="toggle-logo">
-                                <img src={{ asset('assets/images/brand-logos/desktop-dark.png') }} alt="logo"
-                                    class="desktop-dark">
-                                <img src={{ asset('assets/images/brand-logos/toggle-dark.png') }} alt="logo"
+                                <img src={{ asset('images/logo/logo-light.png') }} alt="logo"
                                     class="toggle-dark">
+                                <img src={{ asset('images/logo/logo-light.png') }} alt="logo"
+                                    class="desktop-dark">
+                                <img src={{ asset('images/logo/logo-dark.png') }} alt="logo" class="toggle-logo">
                             </a>
                         </div>
                     </div>
@@ -1430,7 +1429,7 @@
                                     <a href={{ asset('admin') }} class="side-menu__item">Doanh thu</a>
                                 </li>
                                 <li class="slide">
-                                    <a href={{asset('admin/dashboard')}} class="side-menu__item">Số liệu</a>
+                                    <a href={{ asset('admin/dashboard') }} class="side-menu__item">Số liệu</a>
                                 </li>
                             </ul>
                         </li>
@@ -1760,10 +1759,9 @@
         <!-- Footer Start -->
         <footer class="footer mt-auto py-3 bg-white text-center">
             <div class="container">
-                <span class="text-muted"> Manager Website <span id="year"></span> <a href="javascript:void(0);"
-                        class="text-dark fw-medium"></a>.
-                    Designed with by <a href="https://windlaptrinh.com/"
-                        target="_blank">
+                <span class="text-muted"> Manager Website <span id="year"></span> <a
+                        href="javascript:void(0);" class="text-dark fw-medium"></a>.
+                    Designed with by <a href="https://windlaptrinh.com/" target="_blank">
                         <span class="fw-medium text-primary">Wind Lập Trình</span>
                     </a>
                 </span>

@@ -1408,11 +1408,9 @@
 
                         <!-- CRM -->
                         <li class="slide__category"><span class="category-name">CRM</span></li>
-                        <!-- CRM  -->
 
-                        <!-- CRM -->
                         <li class="slide has-sub">
-                            <a href="javascript:void(0);" class="side-menu__item">
+                            <a href="" class="side-menu__item">
                                 <i class="ri-arrow-right-s-line side-menu__angle"></i>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon"
                                     viewBox="0 0 256 256">
@@ -1426,13 +1424,13 @@
                             </a>
                             <ul class="slide-menu child1">
                                 <li class="slide side-menu__label1">
-                                    <a href={{ asset('admin') }}>Dashboards</a>
+                                    <a href="">Dashboards</a>
                                 </li>
                                 <li class="slide">
                                     <a href={{ asset('admin') }} class="side-menu__item">Doanh thu</a>
                                 </li>
                                 <li class="slide">
-                                    <a href={{ asset('admin') }} class="side-menu__item">Số liệu</a>
+                                    <a href={{asset('admin/dashboard')}} class="side-menu__item">Số liệu</a>
                                 </li>
                             </ul>
                         </li>
@@ -1450,7 +1448,7 @@
                             </a>
                             <ul class="slide-menu child1">
                                 <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Khách hàng</a>
+                                    <a href="javascript:void(0);">Khách hàng</a>
                                 </li>
                                 <li class="slide">
                                     <a href={{ url('admin/customer/list') }} class="side-menu__item">Danh sách</a>
@@ -1762,14 +1760,12 @@
         <!-- Footer Start -->
         <footer class="footer mt-auto py-3 bg-white text-center">
             <div class="container">
-                <span class="text-muted"> Copyright © <span id="year"></span> <a href="javascript:void(0);"
-                        class="text-dark fw-medium">Zynix</a>.
-                    Designed with <span class="bi bi-heart-fill text-danger"></span> by <a href="https://wcsrm.com/"
+                <span class="text-muted"> Manager Website <span id="year"></span> <a href="javascript:void(0);"
+                        class="text-dark fw-medium"></a>.
+                    Designed with by <a href="https://windlaptrinh.com/"
                         target="_blank">
-                        <span class="fw-medium text-primary">Spruko</span>
-                    </a> All
-                    rights
-                    reserved
+                        <span class="fw-medium text-primary">Wind Lập Trình</span>
+                    </a>
                 </span>
             </div>
         </footer>

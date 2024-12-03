@@ -94,7 +94,7 @@ typography
   --primary08: rgba(var(--primary-rgb), 0.8);
   --primary09: rgba(var(--primary-rgb), 0.9);
   --primary005: rgba(var(--primary-rgb), 0.05);
-  --default-font-family: "Roboto", sans-serif;
+  --default-font-family: "Open Sans", sans-serif;
   --default-font-weight: 500;
   --default-text-color: #222f36;
   --default-border: #f3f2f9;
@@ -25999,3 +25999,7 @@ a.link-underline-dark {
   --bs-focus-ring-color: rgba(var(--dark-rgb), var(--bs-focus-ring-opacity));
 }
 /* End:: Focus Ring */
+
+.side-menu__item.active {
+  background-color: #f0f0f0; /* Hoặc màu khác bạn muốn */
+}

@@ -33,7 +33,7 @@ Auth::routes();
 Route::middleware('auth')->group(function(){
     Route::get("admin", [DashBoardController::class, "show"]);
     Route::get("admin/dashboard", [DashBoardController::class, "show"]);
-
+    
     // admin/user
     Route::get("admin/user/list", [AdminUserController::class, "list"]);
 
